@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Pasatiempos, créditos del equipo editorial y referencias bibliográficas APA 7 — Sin Filtro. Proyecto Final Grado 11, Colombia 2026." />
+  <title>Créditos y Cierre — Sin Filtro</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Estilos locales de esta página -->
+  <style>
+    /* Contenedor iframe pasatiempos */
+    .iframe-pasatiempo {
+      width: 100%;
+      border: none;
+      border-radius: var(--radio-lg);
+      box-shadow: var(--sombra-lg);
+      display: block;
+    }
+
+    /* Divider decorativo con texto */
+    .divider-texto {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin: var(--espacio-lg) 0;
+    }
+    .divider-texto::before,
+    .divider-texto::after {
+      content: '';
+      flex: 1;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--color-primario), transparent);
+      opacity: .25;
+    }
+    .divider-texto span {
+      font-size: 1.5rem;
+      white-space: nowrap;
+    }
+
+    /* Cita de cierre */
+    .cita-cierre {
+      background: linear-gradient(135deg, var(--color-primario) 0%, #1e40af 50%, var(--color-secundario) 100%);
+      color: #fff;
+      border-radius: var(--radio-xl);
+      padding: var(--espacio-xl) var(--espacio-lg);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .cita-cierre::before {
+      content: '\201C';
+      position: absolute;
+      top: -1.5rem; left: 1.5rem;
+      font-size: 8rem;
+      font-family: Georgia, serif;
+      color: rgba(255,255,255,.08);
+      line-height: 1;
+    }
+    .cita-cierre blockquote {
+      font-family: var(--fuente-titular);
+      font-size: clamp(1.2rem, 3vw, 1.75rem);
+      font-style: italic;
+      margin-bottom: 1rem;
+      color: #fff;
+    }
+
+    /* APA — sangría francesa */
+    .referencias-apa li {
+      padding-left: 2.5rem;
+      text-indent: -2.5rem;
+      margin-bottom: .85rem;
+      font-size: .88rem;
+      line-height: 1.65;
+      color: var(--color-texto);
+    }
+    .referencias-apa li:last-child { margin-bottom: 0; }
+  </style>
+</head>
+
+<body>
+
+  <!-- ══════════════════════════════════════════════════════
+       NAVBAR
+       ══════════════════════════════════════════════════════ -->
+  <nav class="navbar navbar-expand-lg navbar-revista sticky-top" aria-label="Navegación principal">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <i class="bi bi-journal-richtext me-2" aria-hidden="true"></i>
+        Sin <span>Filtro</span> 
+      </a>
+      <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navPrincipal"
+        aria-controls="navPrincipal" aria-expanded="false"
+        aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navPrincipal">
+        <ul class="navbar-nav ms-auto gap-1">
+          <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-door me-1"></i>Portada</a></li>
+          <li class="nav-item"><a class="nav-link" href="constitucion.html"><i class="bi bi-book me-1"></i>Constitución</a></li>
+          <li class="nav-item"><a class="nav-link" href="infancia.html"><i class="bi bi-people me-1"></i>Infancia</a></li>
+          <li class="nav-item"><a class="nav-link" href="genero.html"><i class="bi bi-gender-female me-1"></i>Género</a></li>
+          <li class="nav-item"><a class="nav-link" href="ambiente.html"><i class="bi bi-tree me-1"></i>Ambiente</a></li>
+          <li class="nav-item"><a class="nav-link" href="creditos.html"><i class="bi bi-award me-1"></i>Créditos</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════════════════════
+       HERO INTERNO
+       ══════════════════════════════════════════════════════ -->
+  <header class="hero-revista" role="banner" style="
+  background-image: linear-gradient(135deg, rgba(30,58,138,0.80) 0%, rgba(13,148,136,0.70) 100%),
+                    url('img/foto-hero.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+">
+
+    
+    <div class="container position-relative" style="z-index:1;">
+      <span class="badge-edicion mb-3 d-inline-block">
+        <i class="bi bi-award me-1"></i>Fase 6 — Pasatiempos y Cierre Editorial
+      </span>
+      <h1 class="fade-in-up">
+        Equipo, juego<br>
+        <span style="color:var(--color-acento);">y fuentes que respaldan</span>
+      </h1>
+      <p class="subtitulo fade-in-up fade-in-up-delay-1">
+        Pasatiempos jurídicos, el equipo que hizo posible esta revista
+        y las referencias bibliográficas en norma APA 7.
+      </p>
+    </div>
+  </header>
+
+
+  <!-- ══════════════════════════════════════════════════════
+       SECCIÓN 1 — PASATIEMPOS JURÍDICOS (iframes)
+       ══════════════════════════════════════════════════════ -->
+  <section class="seccion" aria-labelledby="h2-pasatiempos">
+    <div class="container">
+
+      <div class="text-center mb-5">
+        <span class="etiqueta-seccion">Aprende Jugando</span>
+        <h2 id="h2-pasatiempos" class="mt-1">Pasatiempos Jurídicos</h2>
+        <p class="text-muted">
+          Pon a prueba lo que aprendiste en la revista con estos juegos interactivos.
+          Cada actividad refuerza los temas de Constitución, Derechos y Ciudadanía.
+        </p>
+      </div>
+
+      <!-- Instrucción para el equipo editorial -->
+      <div class="alert alert-warning border-0 rounded-3 mb-5 small" role="note">
+        <i class="bi bi-pencil-square me-2" aria-hidden="true"></i>
+        <strong>Instrucción editorial:</strong> Reemplaza las URL en los atributos
+        <code>src</code> de cada <code>&lt;iframe&gt;</code> con el enlace real de tu
+        actividad creada en
+        <a href="https://educaplay.com" target="_blank" rel="noopener">Educaplay</a> o
+        <a href="https://wordwall.net/es" target="_blank" rel="noopener">Wordwall</a>.
+        Para obtener el código: abre tu actividad → botón <strong>"Compartir"</strong>
+        → pestaña <strong>"Insertar"</strong> → copia el enlace del src del iframe.
+        La altura recomendada es <strong>500px</strong>. Asegúrate de que la privacidad
+        de la actividad sea "pública" o "con enlace".
+      </div>
+
+      <div class="row g-5">
+
+        <!-- Pasatiempo 1: Crucigrama Constitucional -->
+        <div class="col-lg-6 animacion-entrada">
+          <div class="card-revista card p-0 overflow-hidden">
+            <div class="card-header-revista card-header px-4 py-3">
+              <i class="bi bi-grid-3x3 me-2" aria-hidden="true"></i>
+              Pasatiempo 1 — Crucigrama Constitucional
+            </div>
+            <div class="card-body p-0">
+              <!--
+                INSTRUCCIÓN: Reemplaza el src de este iframe con tu URL real de Educaplay o Wordwall.
+                Ejemplo Educaplay:  src="https://es.educaplay.com/recursos/0000000-crucigrama.html"
+                Ejemplo Wordwall:   src="https://wordwall.net/es/embed/xxxxxxxxxxxxxxxx"
+              -->
+              <iframe
+                class="iframe-pasatiempo"
+                src="https://wordwall.net/es/embed/placeholder"
+                height="500"
+                title="Crucigrama: Términos de la Constitución Política de Colombia"
+                allow="fullscreen"
+                loading="lazy"
+                aria-label="Juego interactivo: Crucigrama Constitucional">
+                <p class="p-4 text-muted small">
+                  Tu navegador no soporta iframes. Accede directamente al
+                  <a href="https://wordwall.net" target="_blank" rel="noopener">pasatiempo en línea</a>.
+                </p>
+              </iframe>
+            </div>
+            <div class="card-footer bg-transparent border-top px-4 py-3">
+              <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                <div class="small text-muted">
+                  <i class="bi bi-clock me-1" aria-hidden="true"></i>Duración aprox.: 10 min ·
+                  <i class="bi bi-people me-1" aria-hidden="true"></i>Individual
+                </div>
+                <div class="d-flex gap-2 flex-wrap">
+                  <span class="badge badge-ambar badge">Constitución</span>
+                  <span class="badge badge-primario badge text-white">Participación</span>
+                </div>
+              </div>
+              <p class="small text-muted mt-2 mb-0">
+                <strong>Temas:</strong> Mecanismos de participación, derechos fundamentales,
+                artículos clave de la Constitución de 1991.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pasatiempo 2: Sopa de Letras DDHH -->
+        <div class="col-lg-6 animacion-entrada">
+          <div class="card-revista card p-0 overflow-hidden">
+            <div class="card-header-revista card-header card-header-verde px-4 py-3">
+              <i class="bi bi-search me-2" aria-hidden="true"></i>
+              Pasatiempo 2 — Sopa de Letras: Derechos Humanos
+            </div>
+            <div class="card-body p-0">
+              <!--
+                INSTRUCCIÓN: Reemplaza el src con tu actividad real.
+                Los temas sugeridos son: tutela, petición, feminicidio, SRPA,
+                corresponsabilidad, plebiscito, referendo, convivencia, sintiente.
+              -->
+              <iframe
+                class="iframe-pasatiempo"
+                src="https://es.educaplay.com/recursos/placeholder.html"
+                height="500"
+                title="Sopa de Letras: Vocabulario de Derechos Humanos"
+                allow="fullscreen"
+                loading="lazy"
+                aria-label="Juego interactivo: Sopa de Letras Derechos Humanos">
+                <p class="p-4 text-muted small">
+                  Tu navegador no soporta iframes. Accede directamente al
+                  <a href="https://es.educaplay.com" target="_blank" rel="noopener">pasatiempo en línea</a>.
+                </p>
+              </iframe>
+            </div>
+            <div class="card-footer bg-transparent border-top px-4 py-3">
+              <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                <div class="small text-muted">
+                  <i class="bi bi-clock me-1" aria-hidden="true"></i>Duración aprox.: 8 min ·
+                  <i class="bi bi-people me-1" aria-hidden="true"></i>Individual o parejas
+                </div>
+                <div class="d-flex gap-2 flex-wrap">
+                  <span class="badge badge-verde badge text-white">Infancia</span>
+                  <span class="badge badge-danger badge text-white">Género</span>
+                </div>
+              </div>
+              <p class="small text-muted mt-2 mb-0">
+                <strong>Temas:</strong> Ley 1098, SRPA, violencia de género,
+                Ley 1774 (animales sintientes), Código de Policía.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pasatiempo 3: Quiz de opción múltiple (pantalla completa) -->
+        <div class="col-12 animacion-entrada">
+          <div class="card-revista card p-0 overflow-hidden">
+            <div class="card-header-revista card-header card-header-ambar px-4 py-3">
+              <i class="bi bi-patch-question me-2" aria-hidden="true"></i>
+              Pasatiempo 3 — Quiz: ¿Cuánto sabes de ciudadanía?
+            </div>
+            <div class="card-body p-0">
+              <!--
+                INSTRUCCIÓN: Este iframe es más ancho (12 columnas). Ideal para un quiz
+                de opción múltiple con 10 preguntas sobre todos los temas de la revista.
+                Plataformas sugeridas: Wordwall (quiz), Kahoot! (embed limitado),
+                Educaplay (quiz), Quizizz (embed).
+              -->
+              <iframe
+                class="iframe-pasatiempo"
+                src="https://wordwall.net/es/embed/placeholder-quiz"
+                height="500"
+                title="Quiz interactivo: ¿Cuánto sabes de ciudadanía colombiana?"
+                allow="fullscreen"
+                loading="lazy"
+                aria-label="Quiz interactivo sobre ciudadanía y derechos en Colombia">
+                <p class="p-4 text-muted small">
+                  Tu navegador no soporta iframes. Accede directamente al
+                  <a href="https://wordwall.net" target="_blank" rel="noopener">quiz en línea</a>.
+                </p>
+              </iframe>
+            </div>
+            <div class="card-footer bg-transparent border-top px-4 py-3">
+              <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                <div class="small text-muted">
+                  <i class="bi bi-clock me-1" aria-hidden="true"></i>Duración aprox.: 15 min ·
+                  <i class="bi bi-people me-1" aria-hidden="true"></i>Individual o grupal
+                </div>
+                <div class="d-flex gap-2 flex-wrap">
+                  <span class="badge badge-primario badge text-white">Todos los temas</span>
+                  <span class="badge badge-ambar badge">Repaso final</span>
+                </div>
+              </div>
+              <p class="small text-muted mt-2 mb-0">
+                <strong>Recomendación:</strong> Realiza este quiz al final de leer toda la
+                revista. Contiene 10 preguntas de selección múltiple que cubren
+                los 5 temas principales.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /row pasatiempos -->
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════════
+       DIVIDER DECORATIVO
+       ══════════════════════════════════════════════════════ -->
+  <div class="container">
+    <div class="divider-texto">
+      <span>🏅</span>
+    </div>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════════════════
+       SECCIÓN 2 — CRÉDITOS DEL EQUIPO EDITORIAL
+       ══════════════════════════════════════════════════════ -->
+  <section class="seccion-alt" aria-labelledby="h2-equipo">
+    <div class="container">
+
+      <div class="text-center mb-5">
+        <span class="etiqueta-seccion">Equipo Editorial</span>
+        <h2 id="h2-equipo" class="mt-1">Las personas detrás de Sin Filtro</h2>
+        <p class="text-muted">
+          Esta revista es el resultado del trabajo colaborativo de tres estudiantes
+          de grado 11.
+        </p>
+      </div>
+
+      <!--
+        INSTRUCCIÓN: Reemplaza los emojis de los avatares por fotos reales.
+        Para usar una foto: elimina el emoji del .avatar-integrante y agrega
+        un <img src="img/nombre-estudiante.jpg" alt="Foto de [nombre]"
+        style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
+        dentro del div .avatar-integrante.
+        Los nombres, roles y descripciones también deben ser reemplazados.
+      -->
+      <div class="row g-4 justify-content-center">
+
+        <!-- Integrante 1: Director Editorial -->
+        <div class="col-sm-6 col-md-4 col-lg-3 animacion-entrada">
+          <div class="card-integrante">
+            <div class="avatar-integrante" aria-hidden="true">✏️</div>
+            <span class="rol">Director/a Editorial</span>
+            <h3 class="fs-5 text-primario mb-1">Maria Angel Rosario</h3>
+            <p class="small text-muted mb-2">Grado 11 — 2026</p>
+            <p class="small text-muted mb-3">
+              Coordinó la estructura general de la revista, redactó la carta del editor
+              y los artículos de opinión principales.
+            </p>
+            <div class="d-flex justify-content-center gap-2 flex-wrap">
+              <span class="badge badge-primario badge text-white small">Constitución</span>
+              <span class="badge badge-ambar badge small">Editorial</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Integrante 2: Reportera / Reportero -->
+        <div class="col-sm-6 col-md-4 col-lg-3 animacion-entrada">
+          <div class="card-integrante">
+            <div class="avatar-integrante" aria-hidden="true">📷</div>
+            <span class="rol">Reportero/a</span>
+            <h3 class="fs-5 text-primario mb-1">Eliezer Garcia</h3>
+            <p class="small text-muted mb-2">Grado 11 — 2026</p>
+            <p class="small text-muted mb-3">
+              Realizó las entrevistas a estudiantes, coordinó el fotorreportaje de
+              normas de tránsito y la encuesta de convivencia escolar.
+            </p>
+            <div class="d-flex justify-content-center gap-2 flex-wrap">
+              <span class="badge badge-verde badge text-white small">Infancia</span>
+              <span class="badge badge-ambar badge small">Fotografía</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Integrante 3: Analista Legal -->
+        <div class="col-sm-6 col-md-4 col-lg-3 animacion-entrada">
+          <div class="card-integrante">
+            <div class="avatar-integrante" aria-hidden="true">⚖️</div>
+            <span class="rol">Analista Legal</span>
+            <h3 class="fs-5 text-primario mb-1">Jorman Bermudez</h3>
+            <p class="small text-muted mb-2">Grado 11 — 2026</p>
+            <p class="small text-muted mb-3">
+              Investigó y redactó los contenidos sobre Ley 1098, SRPA, Ley Rosa
+              Elvira Cely y el análisis del Código de Policía.
+            </p>
+            <div class="d-flex justify-content-center gap-2 flex-wrap">
+              <span class="badge badge-primario badge text-white small">SRPA</span>
+              <span class="badge badge-danger badge text-white small">Género</span>
+            </div>
+          </div>
+        </div>
+
+       
+
+      <!-- Agradecimientos -->
+      <div class="text-center mt-5 animacion-entrada">
+        <div class="card-revista card p-4 d-inline-block" style="max-width:640px;">
+          <h3 class="fs-5 text-primario mb-3">
+            <i class="bi bi-hand-thumbs-up me-2" aria-hidden="true"></i>
+            Agradecimientos
+          </h3>
+          <p class="small text-muted mb-1">
+            <strong>Docente orientador/a:</strong> Juan David Calle — Ciencias Sociales y Constitución
+          </p>
+          <p class="small text-muted mb-1">
+            <strong>Institución:</strong> Ramon Munera Lopera — Medellin, Antioquia
+          </p>
+          <p class="small text-muted mb-1">
+            <strong>Año escolar:</strong> 2026 · Grado 11
+          </p>
+          <p class="small text-muted mb-0">
+            <strong>Área:</strong> Ciencias Sociales, Constitución Política e Instrucción Cívica
+            (Artículo 41 C.P.)
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════════
+       DIVIDER DECORATIVO
+       ══════════════════════════════════════════════════════ -->
+  <div class="container">
+    <div class="divider-texto">
+      <span>📚</span>
+    </div>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════════════════
+       SECCIÓN 3 — REFERENCIAS BIBLIOGRÁFICAS APA 7
+       ══════════════════════════════════════════════════════ -->
+  <section class="seccion" aria-labelledby="h2-referencias">
+    <div class="container">
+
+      <div class="text-center mb-5">
+        <span class="etiqueta-seccion">Bibliografía</span>
+        <h2 id="h2-referencias" class="mt-1">Referencias Bibliográficas</h2>
+        <p class="text-muted">
+          Todas las fuentes están citadas en <strong>Norma APA 7.ª edición</strong>
+          (American Psychological Association, 2020). Las fuentes de acceso libre
+          están disponibles en los enlaces indicados.
+        </p>
+      </div>
+
+      <!-- Nota sobre APA 7 -->
+      <div class="alert alert-secondary border-0 rounded-3 mb-4 small" role="note">
+        <i class="bi bi-info-circle me-2" aria-hidden="true"></i>
+        <strong>Nota de formato APA 7:</strong> Las entradas usan sangría francesa
+        (segunda línea y siguientes sangradas 1.27 cm). Las URL se incluyen sin punto final.
+        El DOI se usa cuando está disponible. Normas actualizadas según:
+        American Psychological Association. (2020).
+        <em>Publication manual of the American Psychological Association</em> (7.ª ed.).
+        <a href="https://doi.org/10.1037/0000165-000" target="_blank" rel="noopener">
+          https://doi.org/10.1037/0000165-000
+        </a>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Columna 1: Fuentes normativas -->
+        <div class="col-lg-6 animacion-entrada">
+          <div class="card-revista card p-4 h-100">
+            <h3 class="fs-5 text-primario mb-4">
+              <i class="bi bi-file-earmark-law me-2" aria-hidden="true"></i>
+              Fuentes Normativas y Jurisprudenciales
+            </h3>
+            <ol class="referencias-apa list-unstyled">
+
+              <li>
+                Asamblea Nacional Constituyente. (1991).
+                <em>Constitución Política de Colombia</em> [Actualizada por reforma
+                legislativa, 2005]. Congreso de la República.
+                <a href="https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=4125"
+                  target="_blank" rel="noopener">
+                  https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=4125
+                </a>
+              </li>
+
+              <li>
+                Congreso de la República de Colombia. (2006, noviembre 8).
+                <em>Ley 1098 de 2006: Código de la Infancia y la Adolescencia</em>.
+                Diario Oficial N.° 46.446.
+                <a href="https://www.icbf.gov.co/ley-1098-de-2006"
+                  target="_blank" rel="noopener">
+                  https://www.icbf.gov.co/ley-1098-de-2006
+                </a>
+              </li>
+
+              <li>
+                Congreso de la República de Colombia. (2008, diciembre 4).
+                <em>Ley 1257 de 2008: Normas de sensibilización, prevención y
+                sanción de formas de violencia y discriminación contra las mujeres</em>.
+                Diario Oficial N.° 47.193.
+              </li>
+
+              <li>
+                Congreso de la República de Colombia. (2015, julio 6).
+                <em>Ley 1761 de 2015: Rosa Elvira Cely. Tipifica el feminicidio como
+                delito autónomo</em>. Diario Oficial N.° 49.565.
+                <a href="https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62932"
+                  target="_blank" rel="noopener">
+                  https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=62932
+                </a>
+              </li>
+
+              <li>
+                Congreso de la República de Colombia. (2016, julio 29).
+                <em>Ley 1774 de 2016: Modifica el Código Civil, el Código Penal y el
+                Código de Procedimiento Penal (animales seres sintientes)</em>.
+                Diario Oficial N.° 49.747.
+              </li>
+
+              <li>
+                Congreso de la República de Colombia. (2016, julio 29).
+                <em>Ley 1801 de 2016: Código Nacional de Seguridad y Convivencia
+                Ciudadana</em>. Diario Oficial N.° 49.949.
+                <a href="https://www.policia.gov.co/contenido/ley-1801-2016-codigo-nacional-policia"
+                  target="_blank" rel="noopener">
+                  https://www.policia.gov.co/contenido/ley-1801-2016-codigo-nacional-policia
+                </a>
+              </li>
+
+              <li>
+                Corte Constitucional de Colombia. (2022, febrero 21).
+                <em>Sentencia C-055 de 2022: Despenalización del aborto hasta las
+                24 semanas de gestación</em>.
+                <a href="https://www.corteconstitucional.gov.co/relatoria/2022/C-055-22.htm"
+                  target="_blank" rel="noopener">
+                  https://www.corteconstitucional.gov.co/relatoria/2022/C-055-22.htm
+                </a>
+              </li>
+
+              <li>
+                Congreso de la República de Colombia. (2002, julio 24).
+                <em>Ley 769 de 2002: Código Nacional de Tránsito Terrestre</em>.
+                Diario Oficial N.° 44.932.
+              </li>
+
+            </ol>
+          </div>
+        </div>
+
+        <!-- Columna 2: Fuentes académicas e institucionales -->
+        <div class="col-lg-6 animacion-entrada">
+          <div class="card-revista card p-4 h-100">
+            <h3 class="fs-5 text-primario mb-4">
+              <i class="bi bi-journal-bookmark me-2" aria-hidden="true"></i>
+              Fuentes Académicas e Institucionales
+            </h3>
+            <ol class="referencias-apa list-unstyled">
+
+              <li>
+                Organización de las Naciones Unidas. (1989, noviembre 20).
+                <em>Convención sobre los Derechos del Niño</em>. UNICEF.
+                <a href="https://www.unicef.org/es/convencion-derechos-nino/texto-convencion"
+                  target="_blank" rel="noopener">
+                  https://www.unicef.org/es/convencion-derechos-nino/texto-convencion
+                </a>
+              </li>
+
+              <li>
+                Transparencia Internacional. (2024).
+                <em>Índice de Percepción de la Corrupción 2023</em>. Transparency International.
+                <a href="https://www.transparency.org/es/cpi/2023"
+                  target="_blank" rel="noopener">
+                  https://www.transparency.org/es/cpi/2023
+                </a>
+              </li>
+
+              <li>
+                Instituto Nacional de Medicina Legal y Ciencias Forenses. (2024).
+                <em>Forensis 2023: Datos para la vida</em>.
+                <a href="https://www.medicinalegal.gov.co/forensis"
+                  target="_blank" rel="noopener">
+                  https://www.medicinalegal.gov.co/forensis
+                </a>
+              </li>
+
+              <li>
+                Instituto Colombiano de Bienestar Familiar. (2023).
+                <em>Sistema Nacional de Bienestar Familiar: Lineamientos técnicos</em>
+                (Versión actualizada 2023). ICBF.
+                <a href="https://www.icbf.gov.co"
+                  target="_blank" rel="noopener">
+                  https://www.icbf.gov.co
+                </a>
+              </li>
+
+              <li>
+                Organización Panamericana de la Salud. (2021).
+                <em>Violencia contra la mujer</em> [Nota descriptiva]. OPS/OMS.
+                <a href="https://www.paho.org/es/temas/violencia-contra-mujer"
+                  target="_blank" rel="noopener">
+                  https://www.paho.org/es/temas/violencia-contra-mujer
+                </a>
+              </li>
+
+              <li>
+                Profamilia. (2023).
+                <em>Encuesta Nacional de Demografía y Salud 2023: Módulo de salud
+                sexual y reproductiva</em>. Profamilia & Ministerio de Salud.
+                <a href="https://profamilia.org.co"
+                  target="_blank" rel="noopener">
+                  https://profamilia.org.co
+                </a>
+              </li>
+
+              <li>
+                Organización de las Naciones Unidas para la Alimentación y la
+                Agricultura [FAO]. (2023).
+                <em>Ganadería y medio ambiente: Emisiones del sector pecuario</em>.
+                FAO.
+                <a href="https://www.fao.org/livestock-environment/es"
+                  target="_blank" rel="noopener">
+                  https://www.fao.org/livestock-environment/es
+                </a>
+              </li>
+
+              <li>
+                Ministerio de Educación Nacional de Colombia. (2013).
+                <em>Guías pedagógicas para la convivencia escolar: Ley 1620 de 2013</em>.
+                MEN.
+                <a href="https://www.mineducacion.gov.co/1759/w3-article-322486.html"
+                  target="_blank" rel="noopener">
+                  https://www.mineducacion.gov.co/1759/w3-article-322486.html
+                </a>
+              </li>
+
+            </ol>
+          </div>
+        </div>
+
+      </div><!-- /row referencias -->
+
+      <!-- Nota metodológica sobre citaciones -->
+      <div class="alert alert-light border rounded-3 mt-4 small animacion-entrada" role="note">
+        <strong>
+          <i class="bi bi-bookmark-check me-2" aria-hidden="true"></i>
+          Declaración de autoría y uso de fuentes:
+        </strong>
+        Todo el contenido redactado en esta revista es de elaboración propia del
+        equipo editorial estudiantil, basado en las fuentes aquí citadas. Las normas
+        y sentencias se citan con fines educativos conforme al Artículo 44 de la Ley
+        23 de 1982 (excepción educativa del derecho de autor). Los datos estadísticos
+        provienen de fuentes institucionales de acceso público. Esta revista no tiene
+        fines comerciales.
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════════
+       SECCIÓN 4 — CITA DE CIERRE Y NAVEGACIÓN FINAL
+       ══════════════════════════════════════════════════════ -->
+  <section class="seccion-alt" aria-labelledby="h2-cierre">
+    <div class="container">
+
+      <!-- Cita de cierre -->
+      <div class="cita-cierre mb-5 animacion-entrada">
+        <blockquote>
+          "Colombia es un Estado social de derecho, organizado en forma de República
+          unitaria, descentralizada, con autonomía de sus entidades territoriales,
+          democrática, participativa y pluralista, fundada en el respeto de la dignidad
+          humana, en el trabajo y la solidaridad de las personas que la integran
+          y en la prevalencia del interés general."
+        </blockquote>
+        <p class="mb-0" style="color:var(--color-acento); font-weight:700;">
+          — Artículo 1.°, Constitución Política de Colombia, 1991
+        </p>
+        <p class="small mt-2" style="color:rgba(255,255,255,.75);">
+          Este artículo resume el espíritu de todo lo que has leído en esta revista.
+          La ciudadanía activa es la forma más poderosa de hacer valer esas palabras.
+        </p>
+      </div>
+
+      <!-- Navegación de regreso a secciones -->
+      <h2 id="h2-cierre" class="text-center fs-4 text-primario mb-4">
+        Vuelve a explorar la revista
+      </h2>
+      <div class="row g-3 justify-content-center">
+
+        <div class="col-6 col-md-4 col-lg-2 animacion-entrada">
+          <a href="index.html"
+            class="card-revista card p-3 text-center text-decoration-none h-100">
+            <span style="font-size:2rem;" aria-hidden="true">🏠</span>
+            <p class="small fw-600 text-primario mb-0 mt-2">Portada</p>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-2 animacion-entrada">
+          <a href="constitucion.html"
+            class="card-revista card p-3 text-center text-decoration-none h-100">
+            <span style="font-size:2rem;" aria-hidden="true">📜</span>
+            <p class="small fw-600 text-primario mb-0 mt-2">Constitución</p>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-2 animacion-entrada">
+          <a href="infancia.html"
+            class="card-revista card p-3 text-center text-decoration-none h-100">
+            <span style="font-size:2rem;" aria-hidden="true">👶</span>
+            <p class="small fw-600 text-primario mb-0 mt-2">Infancia</p>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-2 animacion-entrada">
+          <a href="genero.html"
+            class="card-revista card p-3 text-center text-decoration-none h-100">
+            <span style="font-size:2rem;" aria-hidden="true">♀️</span>
+            <p class="small fw-600 text-primario mb-0 mt-2">Género</p>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-2 animacion-entrada">
+          <a href="ambiente.html"
+            class="card-revista card p-3 text-center text-decoration-none h-100">
+            <span style="font-size:2rem;" aria-hidden="true">🌿</span>
+            <p class="small fw-600 text-primario mb-0 mt-2">Ambiente</p>
+          </a>
+        </div>
+
+      </div><!-- /row navegación -->
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════════
+       PIE DE PÁGINA — VERSIÓN EXTENDIDA DE CIERRE
+       ══════════════════════════════════════════════════════ -->
+  <footer class="footer-revista" role="contentinfo">
+    <div class="container">
+      <div class="row align-items-start g-4">
+
+        <!-- Columna 1: Identidad -->
+        <div class="col-md-4">
+          <strong style="font-family:var(--fuente-titular);font-size:1.3rem;color:#fff;">
+            Sin Filtro
+          </strong>
+          <p class="small mt-2 mb-0" style="color:rgba(255,255,255,.75);">
+            Revista Escolar Digital sobre Constitución Política,
+            Derechos Humanos y Ciudadanía activa.
+          </p>
+          <p class="small mt-1 mb-0" style="color:rgba(255,255,255,.6);">
+            Proyecto Final · Grado 11 · Colombia ·
+            <span id="ano-footer"></span>
+          </p>
+        </div>
+
+        <!-- Columna 2: Navegación -->
+        <div class="col-md-4">
+          <p class="small fw-700 text-uppercase mb-2"
+            style="color:var(--color-acento); letter-spacing:1px;">
+            Secciones
+          </p>
+          <nav aria-label="Pie de página — secciones">
+            <ul class="list-unstyled small mb-0" style="column-count:2; gap:1rem;">
+              <li class="mb-1"><a href="index.html">Portada</a></li>
+              <li class="mb-1"><a href="constitucion.html">Constitución</a></li>
+              <li class="mb-1"><a href="infancia.html">Infancia</a></li>
+              <li class="mb-1"><a href="genero.html">Género</a></li>
+              <li class="mb-1"><a href="ambiente.html">Ambiente</a></li>
+              <li class="mb-1"><a href="creditos.html">Créditos</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Columna 3: Líneas de emergencia -->
+        <div class="col-md-4">
+          <p class="small fw-700 text-uppercase mb-2"
+            style="color:var(--color-acento); letter-spacing:1px;">
+            Líneas de Emergencia
+          </p>
+          <ul class="list-unstyled small mb-0">
+            <li class="mb-1">
+              <a href="tel:123" style="color:rgba(255,255,255,.85);">
+                <i class="bi bi-telephone-fill me-2 text-warning"></i>
+                <strong>123</strong> — Policía / Emergencias
+              </a>
+            </li>
+            <li class="mb-1">
+              <a href="tel:155" style="color:rgba(255,255,255,.85);">
+                <i class="bi bi-telephone-fill me-2 text-warning"></i>
+                <strong>155</strong> — Violencia de Género (24 h)
+              </a>
+            </li>
+            <li class="mb-1">
+              <a href="tel:018000918080" style="color:rgba(255,255,255,.85);">
+                <i class="bi bi-telephone-fill me-2 text-warning"></i>
+                <strong>01 8000 91 8080</strong> — ICBF
+              </a>
+            </li>
+            <li>
+              <a href="tel:018000914814" style="color:rgba(255,255,255,.85);">
+                <i class="bi bi-telephone-fill me-2 text-warning"></i>
+                <strong>01 8000 914 814</strong> — Defensoría del Pueblo
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div><!-- /row footer -->
+
+      <hr class="footer-linea my-4" />
+
+      <div class="row align-items-center">
+        <div class="col-md-8">
+          <p class="small mb-0" style="color:rgba(255,255,255,.55);">
+            Contenido con fines educativos · Elaborado bajo los principios del
+            <strong style="color:var(--color-acento);">Artículo 41 C.P.</strong> ·
+            Colombia · <span id="ano-footer-2"></span>
+          </p>
+        </div>
+        <div class="col-md-4 text-md-end mt-2 mt-md-0">
+          <p class="small mb-0" style="color:rgba(255,255,255,.45);">
+            Hecho con ❤️ por estudiantes colombianos
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc4s9bIOgUxi8T/jzmCAtVHRm5C1BR08LpCIoJOzA9V"
+    crossorigin="anonymous"></script>
+  <!-- JS propio -->
+  <script src="js/main.js"></script>
+
+  <!-- Script local: segundo span de año en footer -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const span2 = document.getElementById('ano-footer-2');
+      if (span2) span2.textContent = new Date().getFullYear();
+    });
+  </script>
+
+</body>
+</html>

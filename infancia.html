@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Ley 1098 de 2006, SRPA y derechos de la infancia — Voz Cívica 11. Interés superior, protección integral, corresponsabilidad y directorio de atención." />
+  <title>Infancia y Adolescencia — Voz Cívica 11</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+  <!-- ══════════════════════════════════════════════════════
+       NAVBAR
+       ══════════════════════════════════════════════════════ -->
+  <nav class="navbar navbar-expand-lg navbar-revista sticky-top" aria-label="Navegación principal">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <i class="bi bi-journal-richtext me-2" aria-hidden="true"></i>
+        Sin <span>Filtro</span>
+      </a>
+      <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navPrincipal"
+        aria-controls="navPrincipal" aria-expanded="false"
+        aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navPrincipal">
+        <ul class="navbar-nav ms-auto gap-1">
+          <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-door me-1"></i>Portada</a></li>
+          <li class="nav-item"><a class="nav-link" href="constitucion.html"><i class="bi bi-book me-1"></i>Constitución</a></li>
+          <li class="nav-item"><a class="nav-link" href="infancia.html"><i class="bi bi-people me-1"></i>Infancia</a></li>
+          <li class="nav-item"><a class="nav-link" href="genero.html"><i class="bi bi-gender-female me-1"></i>Género</a></li>
+          <li class="nav-item"><a class="nav-link" href="ambiente.html"><i class="bi bi-tree me-1"></i>Ambiente</a></li>
+          <li class="nav-item"><a class="nav-link" href="creditos.html"><i class="bi bi-award me-1"></i>Créditos</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════════════════════
+       HERO INTERNO
+       ══════════════════════════════════════════════════════ -->
+  <header class="hero-revista" role="banner" style="
+  background-image: linear-gradient(135deg, rgba(30,58,138,0.80) 0%, rgba(13,148,136,0.70) 100%),
+                    url('img/foto-hero.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+">
+
+    <div class="container position-relative" style="z-index:1;">
+      <span class="badge-edicion mb-3 d-inline-block">
+        <i class="bi bi-people me-1"></i>Fase 3 — Ley de Infancia y Adolescencia
+      </span>
+      <h1 class="fade-in-up">
+        Ley 1098 de 2006:<br>
+        <span style="color:var(--color-acento);">proteger es responsabilidad de todos</span>
+      </h1>
+      <p class="subtitulo fade-in-up fade-in-up-delay-1">
+        Código de la Infancia y la Adolescencia, SRPA y rutas de atención
+        para niños, niñas y adolescentes en Colombia.
+      </p>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════════════════════
+       SECCIÓN 1 — REPORTAJE: PRINCIPIOS DE LA LEY 1098
+       ══════════════════════════════════════════════════════ -->
+  <section class="seccion" aria-labelledby="h2-ley1098">
+    <div class="container">
+
+      <div class="text-center mb-5">
+        <span class="etiqueta-seccion">Reportaje</span>
+        <h2 id="h2-ley1098" class="mt-1">Los tres pilares de la Ley de Infancia</h2>
+        <p class="text-muted">
+          La Ley 1098 de 2006 reemplazó el antiguo Código del Menor y adoptó la
+          Doctrina de la Protección Integral, basada en la Convención sobre los
+          Derechos del Niño de la ONU (1989), ratificada por Colombia en 1991.
+        </p>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Pilar 1: Interés Superior -->
+        <div class="col-md-4 animacion-entrada">
+          <div class="card-revista card h-100 p-4 text-center">
+            <div style="font-size:3.5rem; margin-bottom:.75rem;" aria-hidden="true">🏛️</div>
+            <h3 class="fs-5 text-primario">Interés Superior del Niño</h3>
+            <span class="badge badge-ambar badge d-inline-block mb-3">Art. 8 — Ley 1098</span>
+            <p class="small text-muted mb-3">
+              Principio rector que exige que en toda decisión administrativa, judicial
+              o familiar que involucre a un niño, niña o adolescente (NNA), prevalezca
+              siempre su bienestar por encima de cualquier otro interés, incluyendo
+              el de sus padres, el Estado o terceros.
+            </p>
+            <p class="small mb-0">
+              <strong>Ejemplo práctico:</strong> Un juez que resuelva la custodia de
+              un menor debe priorizar el entorno que garantice mejor desarrollo emocional,
+              educativo y físico del niño, sin importar los deseos de los adultos en conflicto.
+            </p>
+          </div>
+        </div>
+
+        <!-- Pilar 2: Protección Integral -->
+        <div class="col-md-4 animacion-entrada">
+          <div class="card-revista card h-100 p-4 text-center">
+            <div style="font-size:3.5rem; margin-bottom:.75rem;" aria-hidden="true">🛡️</div>
+            <h3 class="fs-5 text-primario">Protección Integral</h3>
+            <span class="badge badge-verde badge text-white d-inline-block mb-3">Art. 7 — Ley 1098</span>
+            <p class="small text-muted mb-3">
+              Va más allá de la asistencia en situaciones de crisis. Implica
+              <strong>reconocer, garantizar y restablecer</strong> los derechos
+              de los NNA en todas las dimensiones: supervivencia, desarrollo,
+              participación y protección contra toda forma de violencia.
+            </p>
+            <p class="small mb-0">
+              <strong>Incluye:</strong> Derecho a la identidad, a la familia, a la
+              educación de calidad, a la salud, a la recreación, a la cultura y
+              a vivir libres de toda forma de explotación, abuso o violencia.
+            </p>
+          </div>
+        </div>
+
+        <!-- Pilar 3: Corresponsabilidad -->
+        <div class="col-md-4 animacion-entrada">
+          <div class="card-revista card h-100 p-4 text-center">
+            <div style="font-size:3.5rem; margin-bottom:.75rem;" aria-hidden="true">🤝</div>
+            <h3 class="fs-5 text-primario">Corresponsabilidad</h3>
+            <span class="badge badge-primario badge text-white d-inline-block mb-3">Art. 10 — Ley 1098</span>
+            <p class="small text-muted mb-3">
+              La protección de NNA es una responsabilidad <strong>compartida y
+              concurrente</strong> entre la <em>familia</em>, la <em>sociedad</em>
+              y el <em>Estado</em>. Ningún actor puede excusarse argumentando que
+              la responsabilidad recae exclusivamente en otro.
+            </p>
+            <p class="small mb-0">
+              <strong>En el colegio:</strong> Los docentes, directivos y personal
+              administrativo son <em>garantes</em> de derechos. Tienen la obligación
+              legal de reportar cualquier indicio de maltrato o abuso que detecten.
+            </p>
+          </div>
+        </div>
+
+      </div><!-- /row pilares -->
+
+      <!-- Artículo de profundización -->
+      <div class="articulo-opinion mt-5 animacion-entrada">
+        <span class="etiqueta-seccion">Análisis</span>
+        <h3 class="fs-4 text-primario mt-2 mb-3">
+          ¿Qué cambió con la Ley 1098 respecto al viejo Código del Menor?
+        </h3>
+        <p>
+          Antes de 2006, Colombia aplicaba el Código del Menor (Decreto 2737 de 1989),
+          un modelo tutelar que trataba a los niños como <em>objetos de protección</em>
+          del Estado, no como <em>sujetos de derechos</em>. Bajo ese paradigma,
+          un menor que cometía una infracción podía ser internado en un reformatorio
+          indefinidamente, sin proceso judicial claro ni garantías.
+        </p>
+        <p>
+          La Ley 1098 de 2006 representó un cambio de paradigma: adoptó la
+          <strong>Doctrina de la Protección Integral</strong> y elevó a los NNA
+          al rango de ciudadanos plenos con derechos exigibles. Reconoció que
+          la pobreza, la violencia intrafamiliar y la exclusión social son las
+          causas estructurales de la vulneración de derechos, y no defectos
+          individuales del niño o su familia.
+        </p>
+        <p>
+          Este cambio tiene consecuencias concretas: hoy, cuando un estudiante
+          es víctima de maltrato en su hogar, la institución educativa no solo
+          <em>puede</em> reportarlo al ICBF — está <em>legalmente obligada</em> a hacerlo.
+          La omisión de ese reporte puede generar responsabilidad disciplinaria
+          para el docente o directivo.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════════
+       SECCIÓN 2 — SRPA: RUTA VISUAL (timeline)
+       ══════════════════════════════════════════════════════ -->
+  <section class="seccion-alt" id="srpa" aria-labelledby="h2-srpa">
+    <div class="container">
+
+      <div class="text-center mb-5">
+        <span class="etiqueta-seccion">SRPA</span>
+        <h2 id="h2-srpa" class="mt-1">
+          Sistema de Responsabilidad Penal para Adolescentes
+        </h2>
+        <p class="text-muted">
+          El SRPA (Libro II, Ley 1098 de 2006) es un sistema especializado,
+          diferente al sistema penal de adultos. Su finalidad es
+          <strong>pedagógica, restaurativa y protectora</strong>, no retributiva.
+          Aplica a jóvenes entre <strong>14 y 17 años</strong> que cometan delitos.
+        </p>
+      </div>
+
+      <!-- Alerta: menores de 14 -->
+      <div class="alert alert-warning border-0 rounded-3 mb-4 animacion-entrada" role="note">
+        <i class="bi bi-info-circle me-2" aria-hidden="true"></i>
+        <strong>Importante:</strong> Los niños y niñas <strong>menores de 14 años</strong>
+        no son imputables penalmente. Cuando cometen una infracción, el ICBF activa
+        medidas de restablecimiento de derechos, no el sistema penal.
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="timeline">
+
+            <!-- Etapa 1: Captura -->
+            <div class="timeline-item animacion-entrada">
+              <div class="card-revista card p-4">
+                <div class="d-flex align-items-start gap-3">
+                  <div class="text-center" style="min-width:48px;">
+                    <span style="font-size:2rem;" aria-hidden="true">🚔</span>
+                    <div class="badge badge-primario badge text-white mt-1 small">Etapa 1</div>
+                  </div>
+                  <div>
+                    <h3 class="timeline-titulo">Captura y presentación ante el Fiscal</h3>
+                    <p class="small mb-2">
+                      La Policía de Infancia y Adolescencia captura al adolescente
+                      y lo presenta ante el Fiscal Delegado para Adolescentes.
+                      <strong>No puede ser puesto en celdas con adultos</strong>.
+                    </p>
+                    <div class="row g-2 small">
+                      <div class="col-sm-6">
+                        <div class="bg-light rounded p-2">
+                          <i class="bi bi-check-circle text-success me-1"></i>
+                          Derecho a ser informado del motivo de la captura
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="bg-light rounded p-2">
+                          <i class="bi bi-check-circle text-success me-1"></i>
+                          Derecho a comunicarse con su familia de inmediato
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="bg-light rounded p-2">
+                          <i class="bi bi-check-circle text-success me-1"></i>
+                          Derecho a defensor de oficio si no tiene abogado
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="bg-light rounded p-2">
+                          <i class="bi bi-x-circle text-danger me-1"></i>
+                          Prohibida la detención en URI de adultos
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Etapa 2: Audiencia de legalización -->
+            <div class="timeline-item animacion-entrada">
+              <div class="card-revista card p-4">
+                <div class="d-flex align-items-start gap-3">
+                  <div class="text-center" style="min-width:48px;">
+                    <span style="font-size:2rem;" aria-hidden="true">⚖️</span>
+                    <div class="badge badge-verde badge text-white mt-1 small">Etapa 2</div>
+                  </div>
+                  <div>
+                    <h3 class="timeline-titulo">Audiencia de control de legalidad</h3>
+                    <p class="small mb-2">
+                      El Juez de Control de Garantías para Adolescentes revisa en
+                      máximo <strong>36 horas</strong> si la captura fue legal.
+                      Aquí el Fiscal puede solicitar medidas de aseguramiento
+                      (internamiento preventivo solo si hay riesgo grave).
+                    </p>
+                    <p class="small mb-0">
+                      <strong>Medidas de aseguramiento posibles:</strong>
+                      Internamiento preventivo en Centro de Atención Especializada (CAE),
+                      detención domiciliaria, o libertad con cargos.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Etapa 3: Juicio oral -->
+            <div class="timeline-item animacion-entrada">
+              <div class="card-revista card p-4">
+                <div class="d-flex align-items-start gap-3">
+                  <div class="text-center" style="min-width:48px;">
+                    <span style="font-size:2rem;" aria-hidden="true">🏛️</span>
+                    <div class="badge badge-ambar badge mt-1 small">Etapa 3</div>
+                  </div>
+                  <div>
+                    <h3 class="timeline-titulo">Juicio oral ante el Juez Penal para Adolescentes</h3>
+                    <p class="small mb-2">
+                      El proceso es <strong>reservado</strong>: no es público para
+                      proteger la identidad del adolescente. Se aplican principios
+                      de <em>oralidad</em>, <em>inmediación</em> y <em>celeridad</em>.
+                    </p>
+                    <p class="small mb-0">
+                      El adolescente puede llegar a acuerdos preacordados o
+                      aceptación de cargos, lo que reduce la sanción.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Etapa 4: Sanción -->
+            <div class="timeline-item animacion-entrada">
+              <div class="card-revista card p-4">
+                <div class="d-flex align-items-start gap-3">
+                  <div class="text-center" style="min-width:48px;">
+                    <span style="font-size:2rem;" aria-hidden="true">📋</span>
+                    <div class="badge badge-primario badge text-white mt-1 small">Etapa 4</div>
+                  </div>
+                  <div>
+                    <h3 class="timeline-titulo">Sanciones — de menor a mayor gravedad</h3>
+                    <p class="small mb-2">El Art. 177 de la Ley 1098 establece las sanciones
+                    en orden ascendente. El juez elige la <em>más pedagógica</em>:</p>
+                    <div class="table-responsive">
+                      <table class="table table-sm table-bordered small mb-0">
+                        <thead class="table-primary">
+                          <tr>
+                            <th>Sanción</th>
+                            <th>Duración máxima</th>
+                            <th>Descripción</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><strong>Amonestación</strong></td>
+                            <td>—</td>
+                            <td>Llamado de atención formal con asistencia obligatoria a charlas</td>
+                          </tr>
+                          <tr>
+                            <td><strong>Reglas de conducta</strong></td>
+                            <td>2 años</td>
+                            <td>Obligaciones de hacer o no hacer supervisadas</td>
+                          </tr>
+                          <tr>
+                            <td><strong>Prestación de servicios a la comunidad</strong></td>
+                            <td>6 meses</td>
+                            <td>Actividades de utilidad pública sin remuneración</td>
+                          </tr>
+                          <tr>
+                            <td><strong>Libertad asistida</strong></td>
+                            <td>2 años</td>
+                            <td>Supervisión por entidad oficial con seguimiento</td>
+                          </tr>
+                          <tr>
+                            <td><strong>Internamiento semiabierto</strong></td>
+                            <td>3 años</td>
+                            <td>En centro especializado con permisos de salida</td>
+                          </tr>
+                          <tr class="table-danger">
+                            <td><strong>Privación de libertad</strong></td>
+                            <td>8 años (delitos graves)</td>
+                            <td>Solo en CAE, nunca con adultos. Incluye educación obligatoria</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Etapa 5: Resocialización -->
+            <div class="timeline-item animacion-entrada">
+              <div class="card-revista card p-4"
+                style="border-top:4px solid var(--color-secundario);">
+                <div class="d-flex align-items-start gap-3">
+                  <div class="text-center" style="min-width:48px;">
+                    <span style="font-size:2rem;" aria-hidden="true">🌱</span>
+                    <div class="badge badge-verde badge text-white mt-1 small">Etapa 5</div>
+                  </div>
+                  <div>
+                    <h3 class="timeline-titulo" style="color:var(--color-secundario);">
+                      Resocialización y egreso
+                    </h3>
+                    <p class="small mb-0">
+                      Durante toda la sanción, el adolescente tiene derecho a
+                      continuar su educación formal, recibir atención en salud mental,
+                      tener contacto con su familia y acceder a programas de
+                      formación para el trabajo. Al cumplir la mayoría de edad, el
+                      registro del proceso <strong>no ingresa a la hoja de vida</strong>
+                      ni a antecedentes penales, salvo delitos de extrema gravedad.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- /timeline SRPA -->
+        </div>
+      </div><!-- /row -->
+
+      <!-- Mitos del SRPA -->
+      <div class="mt-5 animacion-entrada">
+        <h3 class="fs-5 text-primario mb-3">
+          <i class="bi bi-exclamation-diamond me-2" aria-hidden="true"></i>
+          Mitos frecuentes sobre el SRPA
+        </h3>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <div class="alert alert-danger border-0 rounded-3 mb-0">
+              <strong>❌ MITO:</strong> "Los menores pueden cometer cualquier delito sin consecuencias."<br>
+              <span class="small">
+                <strong>✅ REALIDAD:</strong> El SRPA sí impone sanciones. Para delitos graves
+                (homicidio, secuestro, extorsión) la privación de libertad puede llegar a 8 años.
+              </span>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="alert alert-danger border-0 rounded-3 mb-0">
+              <strong>❌ MITO:</strong> "Un adolescente en el SRPA queda con antecedentes para siempre."<br>
+              <span class="small">
+                <strong>✅ REALIDAD:</strong> El sistema es reservado. Al cumplir 18 años, el
+                registro no aparece en antecedentes penales ordinarios.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════════
+       SECCIÓN 3 — GRÁFICO DE BULLYING (Chart.js)
+       ══════════════════════════════════════════════════════ -->
+  <section class="seccion" aria-labelledby="h2-bullying">
+    <div class="container">
+
+      <div class="text-center mb-5">
+        <span class="etiqueta-seccion">Datos de Nuestra Encuesta</span>
+        <h2 id="h2-bullying" class="mt-1">Convivencia Escolar — Resultados 2026</h2>
+        <p class="text-muted">
+          Encuesta aplicada a <strong>40 estudiantes</strong> de grado 8 a 10
+          durante octubre de 2026. Objetivo: identificar situaciones de convivencia
+          que vulneran derechos en el entorno escolar.
+        </p>
+      </div>
+
+      <div class="row align-items-center g-4">
+
+        <!-- Gráfico -->
+        <div class="col-lg-7 animacion-entrada">
+          <div class="card-revista card p-4">
+            <canvas id="graficoBullying"
+              role="img"
+              aria-label="Gráfico de barras: resultados encuesta convivencia escolar 40 estudiantes 2026"
+              height="320">
+            </canvas>
+          </div>
+        </div>
+
+        <!-- Análisis -->
+        <div class="col-lg-5 animacion-entrada">
+          <span class="etiqueta-seccion">Análisis Editorial</span>
+          <h3 class="fs-5 text-primario mt-2">¿Qué nos dicen los datos?</h3>
+          <article class="articulo-opinion mt-3">
+            <p class="small">
+              Los resultados de la encuesta revelan que el acoso verbal 
+              representa la forma de violencia más presenciada y experimentada 
+              en el entorno escolar, con un 34% de las menciones. A esto se 
+              suma que un preocupante 41.5% de los encuestados reporta haber 
+              sido testigo o víctima de otras formas de agresión (incluyendo 
+              agresión física con un 15.1%). Estas cifras evidencian que las 
+              burlas, los insultos y los empujones continúan estando profundamente 
+              arraigados en la rutina diaria de los estudiantes.
+            </p>
+            <p class="small">
+              ​El espacio físico del colegio es donde con mayor frecuencia ocurren 
+              estas conductas: un abrumador 58.5% de los casos se concentra dentro 
+              del salón de clase (durante la jornada o entre clases), seguido por 
+              los espacios digitales (WhatsApp, Instagram, TikTok) con un 26.4%. 
+              El resto se distribuye entre los descansos/cafetería (7.5%) y los 
+              alrededores fuera del colegio (7.5%). Estos datos demuestran que 
+              el aula requiere un acompañamiento más activo y preventivo por 
+              parte del cuerpo docente.
+            </p>
+            <p class="small mb-0">
+              Frente a estas situaciones, solo el 34% de los afectados acude 
+              a las autoridades del colegio (orientación, directores de grupo 
+              o personería). Por el contrario, la mayoría prefiere mantener el 
+              silencio o buscar vías informales:
+            </p>
+          </article>
+        </div>
+
+      </div><!-- /row gráfico -->
+
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════════
+       SECCIÓN 4 — DIRECTORIO DE ATENCIÓN
+       ══════════════════════════════════════════════════════ -->
+  <section class="seccion-alt" aria-labelledby="h2-directorio">
+    <div class="container">
+
+      <div class="text-center mb-5">
+        <span class="etiqueta-seccion">Directorio</span>
+        <h2 id="h2-directorio" class="mt-1">¿A quién acudir? Rutas de atención</h2>
+        <p class="text-muted">
+          Si conoces o vives una situación de vulneración de derechos de NNA,
+          estas entidades tienen la obligación legal de atenderte.
+        </p>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- ICBF -->
+        <div class="col-md-4 animacion-entrada">
+          <div class="card-revista card h-100">
+            <div class="card-header-revista card-header card-header-verde">
+              <i class="bi bi-building me-2" aria-hidden="true"></i>
+              Instituto Colombiano de Bienestar Familiar — ICBF
+            </div>
+            <div class="card-body p-4">
+              <p class="small mb-3">
+                Entidad del Estado encargada de liderar el
+                <strong>Sistema Nacional de Bienestar Familiar</strong>.
+                Atiende casos de maltrato, abandono, abuso sexual y
+                restablecimiento de derechos de NNA.
+              </p>
+              <ul class="list-unstyled small">
+                <li class="mb-2">
+                  <i class="bi bi-telephone-fill text-secundario me-2" aria-hidden="true"></i>
+                  <strong>Línea gratuita:</strong>
+                  <a href="tel:018000918080">01 8000 91 8080</a>
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-globe text-secundario me-2" aria-hidden="true"></i>
+                  <a href="https://www.icbf.gov.co" target="_blank" rel="noopener">
+                    www.icbf.gov.co
+                  </a>
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-clock text-secundario me-2" aria-hidden="true"></i>
+                  Atención: 24 horas / 7 días
+                </li>
+                <li>
+                  <i class="bi bi-geo-alt text-secundario me-2" aria-hidden="true"></i>
+                  Centros zonales en todos los municipios del país
+                </li>
+              </ul>
+            </div>
+            <div class="card-footer bg-transparent border-top text-center pb-3">
+              <span class="badge badge-verde badge text-white">Prioridad: Restablecimiento de derechos</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Comisaría de Familia -->
+        <div class="col-md-4 animacion-entrada">
+          <div class="card-revista card h-100">
+            <div class="card-header-revista card-header">
+              <i class="bi bi-house-heart me-2" aria-hidden="true"></i>
+              Comisaría de Familia
+            </div>
+            <div class="card-body p-4">
+              <p class="small mb-3">
+                Entidad municipal que atiende la
+                <strong>violencia intrafamiliar</strong>, conflictos familiares y
+                situaciones de riesgo para NNA en el hogar. Puede imponer
+                medidas de protección de forma inmediata.
+              </p>
+              <ul class="list-unstyled small">
+                <li class="mb-2">
+                  <i class="bi bi-telephone-fill text-primario me-2" aria-hidden="true"></i>
+                  <strong>Consulta tu municipio:</strong>
+                  Directorio en la alcaldía local
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-shield-check text-primario me-2" aria-hidden="true"></i>
+                  Puede emitir medidas de protección en 24 h
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-person-check text-primario me-2" aria-hidden="true"></i>
+                  Servicio gratuito para toda la ciudadanía
+                </li>
+                <li>
+                  <i class="bi bi-exclamation-triangle text-primario me-2" aria-hidden="true"></i>
+                  Si hay peligro inminente: llama al <strong>123</strong>
+                </li>
+              </ul>
+            </div>
+            <div class="card-footer bg-transparent border-top text-center pb-3">
+              <span class="badge badge-primario badge text-white">Prioridad: Violencia intrafamiliar</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Policía de Infancia -->
+        <div class="col-md-4 animacion-entrada">
+          <div class="card-revista card h-100">
+            <div class="card-header-revista card-header card-header-ambar">
+              <i class="bi bi-shield-fill me-2" aria-hidden="true"></i>
+              Policía Nacional — Grupo de Infancia y Adolescencia
+            </div>
+            <div class="card-body p-4">
+              <p class="small mb-3">
+                Unidad especializada de la Policía Nacional encargada de la
+                <strong>protección de NNA</strong>, prevención del reclutamiento
+                por grupos armados y atención en el SRPA.
+              </p>
+              <ul class="list-unstyled small">
+                <li class="mb-2">
+                  <i class="bi bi-telephone-fill text-acento me-2" aria-hidden="true"></i>
+                  <strong>Línea de emergencia:</strong>
+                  <a href="tel:123"><strong>123</strong></a>
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-telephone text-acento me-2" aria-hidden="true"></i>
+                  <strong>Línea Policía Nacional:</strong>
+                  <a href="tel:164">164</a>
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-globe text-acento me-2" aria-hidden="true"></i>
+                  <a href="https://www.policia.gov.co" target="_blank" rel="noopener">
+                    www.policia.gov.co
+                  </a>
+                </li>
+                <li>
+                  <i class="bi bi-clock text-acento me-2" aria-hidden="true"></i>
+                  Disponible 24/7 en todo el territorio nacional
+                </li>
+              </ul>
+            </div>
+            <div class="card-footer bg-transparent border-top text-center pb-3">
+              <span class="badge badge-ambar badge">Prioridad: Emergencias y SRPA</span>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /row directorio -->
+
+      <!-- Ruta resumida -->
+      <div class="card-revista card mt-4 p-4 animacion-entrada">
+        <h3 class="fs-5 text-primario mb-3">
+          <i class="bi bi-signpost-split me-2" aria-hidden="true"></i>
+          Ruta de atención según el tipo de situación
+        </h3>
+        <div class="table-responsive">
+          <table class="table tabla-violencias table-sm table-bordered align-middle small mb-0">
+            <thead>
+              <tr>
+                <th>Situación</th>
+                <th>Primera entidad a contactar</th>
+                <th>Urgencia</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Maltrato físico o abuso sexual</td>
+                <td>ICBF (01 8000 91 8080) o Policía (123)</td>
+                <td><span class="badge bg-danger text-white">Inmediata</span></td>
+              </tr>
+              <tr>
+                <td>Violencia intrafamiliar</td>
+                <td>Comisaría de Familia o Policía (123)</td>
+                <td><span class="badge bg-danger text-white">Inmediata</span></td>
+              </tr>
+              <tr>
+                <td>Acoso escolar (matoneo)</td>
+                <td>Comité de Convivencia Escolar → Comisaría</td>
+                <td><span class="badge bg-warning text-dark">Urgente</span></td>
+              </tr>
+              <tr>
+                <td>Trabajo infantil</td>
+                <td>ICBF o Ministerio del Trabajo</td>
+                <td><span class="badge bg-warning text-dark">Urgente</span></td>
+              </tr>
+              <tr>
+                <td>Adolescente infractor (SRPA)</td>
+                <td>Policía de Infancia y Adolescencia</td>
+                <td><span class="badge bg-primary text-white">Formal</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════════
+       SECCIÓN 5 — COLUMNA: DEBERES VS. DERECHOS
+       ══════════════════════════════════════════════════════ -->
+  <section class="seccion" aria-labelledby="h2-deberes">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-7">
+
+          <span class="etiqueta-seccion">Columna de Opinión</span>
+          <h2 id="h2-deberes" class="mt-2 fs-4">Deberes vs. Derechos: la otra cara de la moneda</h2>
+          <p class="text-muted small mb-4">
+            <i class="bi bi-person-circle me-1"></i>Por el Equipo Editorial ·
+            <time datetime="2026-05-01">Mayo 2026</time>
+          </p>
+
+          <blockquote class="carta-editor">
+            <p>
+              Hablar de derechos sin mencionar los deberes es contar solo la mitad
+              de la historia. La Ley 1098 de 2006 no es un catálogo de privilegios
+              para adolescentes irresponsables; es un pacto social que también les
+              exige: respetar a sus docentes, cuidar los bienes públicos, no ejercer
+              violencia contra sus compañeros y participar activamente en la vida
+              escolar y comunitaria.
+            </p>
+            <p>
+              El Artículo 15 de la ley es explícito: los NNA tienen el deber de
+              conocer la Constitución, respetar los derechos de los demás,
+              actuar con solidaridad social y contribuir al mantenimiento de la
+              paz. Reclamar derechos sin asumir esos deberes no es ciudadanía;
+              es oportunismo. La verdadera madurez cívica consiste en entender
+              que los derechos de cada uno terminan exactamente donde empiezan
+              los del otro.
+            </p>
+            <span class="firma-editor">— Equipo Editorial · Voz Cívica 11</span>
+          </blockquote>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════════
+       PIE DE PÁGINA
+       ══════════════════════════════════════════════════════ -->
+  <footer class="footer-revista" role="contentinfo">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-3 mb-md-0">
+          <strong style="font-family:var(--fuente-titular);font-size:1.1rem;color:#fff;">Sin Filtro</strong>
+          <p class="mb-0 mt-1 small">Revista Escolar Digital · Grado 11 · Colombia · <span id="ano-footer"></span></p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <nav aria-label="Pie de página">
+            <ul class="list-unstyled d-flex flex-wrap justify-content-md-end gap-2 mb-0">
+              <li><a href="index.html">Portada</a></li>
+              <li><a href="constitucion.html">Constitución</a></li>
+              <li><a href="infancia.html">Infancia</a></li>
+              <li><a href="genero.html">Género</a></li>
+              <li><a href="ambiente.html">Ambiente</a></li>
+              <li><a href="creditos.html">Créditos</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <hr class="footer-linea my-3" />
+      <p class="text-center small mb-0" style="color:rgba(255,255,255,.55);">
+        Contenido con fines educativos · Artículo 41 C.P.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc4s9bIOgUxi8T/jzmCAtVHRm5C1BR08LpCIoJOzA9V"
+    crossorigin="anonymous"></script>
+  <!-- JS propio -->
+  <script src="js/main.js"></script>
+
+  <!-- ── Script local: datos de la encuesta y renderizado del gráfico ── -->
+  <script>
+    /**
+     * Datos de la encuesta de convivencia escolar (40 estudiantes, 2026).
+     * Modifica estos valores con los resultados reales de tu encuesta.
+     * Cada valor representa el número de estudiantes que reportaron la situación.
+     */
+    const datosEncuesta = {
+      labels: [
+        'Acoso verbal\n(insultos/burlas)',
+        'Ciberacoso\n(redes sociales)',
+        'Agresión\nfísica',
+        'Discriminación\n(raza/género/etc.)'
+      ],
+      valores: [41, 2, 8, 3]
+      /* ↑ Ejemplo: 29 de 40 estudiantes reportaron acoso verbal */
+    };
+
+    /* Esperamos a que Chart.js y main.js estén cargados */
+    document.addEventListener('DOMContentLoaded', () => {
+      if (typeof renderizarGraficoBullying === 'function') {
+        renderizarGraficoBullying(datosEncuesta);
+      }
+    });
+  </script>
+
+</body>
+</html>

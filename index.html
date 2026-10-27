@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Voz Cívica 11 — Revista Escolar Digital sobre Constitución Política, Derechos Humanos y Ciudadanía. Proyecto Final Grado 11, Colombia 2026." />
+  <meta name="author" content="Equipo Editorial Grado 11" />
+  <title>Sin Filtro — Portada</title>
+
+  <!-- Bootstrap 5 CSS (CDN) -->
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- Google Fonts: Playfair Display + Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Hoja de estilos propia -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       BARRA DE NAVEGACIÓN PERSISTENTE
+       ═══════════════════════════════════════════════════════════ -->
+  <nav class="navbar navbar-expand-lg navbar-revista sticky-top" aria-label="Navegación principal">
+    <div class="container">
+
+      <!-- Marca / Nombre de la revista -->
+      <a class="navbar-brand" href="index.html">
+        <i class="bi bi-journal-richtext me-2" aria-hidden="true"></i>
+        Sin <span>Filtro</span>
+      </a>
+
+      <!-- Botón hamburguesa para móviles -->
+      <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navPrincipal"
+        aria-controls="navPrincipal" aria-expanded="false"
+        aria-label="Abrir menú de navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menú de páginas -->
+      <div class="collapse navbar-collapse" id="navPrincipal">
+        <ul class="navbar-nav ms-auto gap-1">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="bi bi-house-door me-1" aria-hidden="true"></i>Portada
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="constitucion.html">
+              <i class="bi bi-book me-1" aria-hidden="true"></i>Constitución
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="infancia.html">
+              <i class="bi bi-people me-1" aria-hidden="true"></i>Infancia
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="genero.html">
+              <i class="bi bi-gender-female me-1" aria-hidden="true"></i>Género
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ambiente.html">
+              <i class="bi bi-tree me-1" aria-hidden="true"></i>Ambiente
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="creditos.html">
+              <i class="bi bi-award me-1" aria-hidden="true"></i>Créditos
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav><!-- /navbar -->
+
+
+  <!-- ═══════════════════════════════════════════════════════════
+       HERO — PORTADA DE LA REVISTA
+       ═══════════════════════════════════════════════════════════ -->
+  <header class="hero-revista" role="banner" style="
+  background-image: linear-gradient(135deg, rgba(30,58,138,0.80) 0%, rgba(13,148,136,0.70) 100%),
+                    url('img/foto-hero.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+">
+
+    <div class="container position-relative" style="z-index:1;">
+
+      <!-- Metadatos editoriales -->
+      <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
+        <span class="badge-edicion">
+          <i class="bi bi-calendar3 me-1" aria-hidden="true"></i>
+          Edición Especial · 2026
+        </span>
+        <span class="badge bg-secondary bg-opacity-50 text-white">
+          Vol. 1 &nbsp;·&nbsp; Grado 11
+        </span>
+      </div>
+
+      <!-- Titular principal -->
+      <h1 class="fade-in-up">
+        Sin <span style="color:var(--color-acento);">Filtro</span>
+      </h1>
+      <p class="subtitulo mb-4 fade-in-up fade-in-up-delay-1">
+        Constitución, Derechos Humanos y Ciudadanía activa.<br>
+        <em>Porque conocer tus derechos es el primer paso para ejercerlos.</em>
+      </p>
+
+      <!-- Botones de llamado a la acción -->
+      <div class="d-flex flex-wrap gap-3 fade-in-up fade-in-up-delay-2">
+        <a href="constitucion.html" class="btn btn-warning fw-700 px-4 py-2">
+          <i class="bi bi-book-half me-2" aria-hidden="true"></i>Leer la Revista
+        </a>
+        <a href="#titulares" class="btn btn-outline-light px-4 py-2">
+          <i class="bi bi-chevron-down me-2" aria-hidden="true"></i>Ver Titulares
+        </a>
+      </div>
+    </div>
+  </header><!-- /header hero -->
+
+
+  <!-- ═══════════════════════════════════════════════════════════
+       SECCIÓN 1 — TITULARES DESTACADOS
+       ═══════════════════════════════════════════════════════════ -->
+  <section id="titulares" class="seccion" aria-labelledby="h2-titulares">
+    <div class="container">
+
+      <div class="text-center mb-5">
+        <span class="etiqueta-seccion">Esta edición</span>
+        <h2 id="h2-titulares" class="mt-1">Titulares Destacados</h2>
+        <p class="text-muted">Los temas que toda la comunidad educativa debe conocer.</p>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Titular 1: Constitución -->
+        <div class="col-md-4 animacion-entrada">
+          <article class="titular-card card h-100">
+            <div class="card-body p-4">
+              <span class="card-categoria">
+                <i class="bi bi-book me-1" aria-hidden="true"></i>Constitución
+              </span>
+              <h3 class="card-title mt-2 fs-5">
+                Acción de Tutela: el escudo ciudadano que pocos adolescentes conocen
+              </h3>
+              <p class="card-text text-muted small">
+                Cada día miles de colombianos vulneran sus derechos sin saberlo. Aprende cuándo
+                y cómo interponer una tutela en menos de 10 días.
+              </p>
+              <a href="constitucion.html#tutela" class="btn btn-sm btn-primario mt-2">
+                Leer más <i class="bi bi-arrow-right ms-1" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="card-footer bg-transparent border-0 pb-3 px-4">
+              <small class="text-muted">
+                <i class="bi bi-clock me-1" aria-hidden="true"></i>Lectura: 5 min
+              </small>
+            </div>
+          </article>
+        </div>
+
+        <!-- Titular 2: Infancia y SRPA -->
+        <div class="col-md-4 animacion-entrada">
+          <article class="titular-card card h-100">
+            <div class="card-body p-4">
+              <span class="card-categoria" style="color:var(--color-primario);">
+                <i class="bi bi-people me-1" aria-hidden="true"></i>Infancia &amp; SRPA
+              </span>
+              <h3 class="card-title mt-2 fs-5">
+                El Sistema de Responsabilidad Penal para Adolescentes: ¿sanción o resocialización?
+              </h3>
+              <p class="card-text text-muted small">
+                Colombia tiene un sistema diferenciado para menores en conflicto con la ley.
+                Entendemos sus etapas, garantías y mitos más comunes.
+              </p>
+              <a href="infancia.html#srpa" class="btn btn-sm btn-primario mt-2">
+                Leer más <i class="bi bi-arrow-right ms-1" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="card-footer bg-transparent border-0 pb-3 px-4">
+              <small class="text-muted">
+                <i class="bi bi-clock me-1" aria-hidden="true"></i>Lectura: 7 min
+              </small>
+            </div>
+          </article>
+        </div>
+
+        <!-- Titular 3: Violencia de Género -->
+        <div class="col-md-4 animacion-entrada">
+          <article class="titular-card card h-100">
+            <div class="card-body p-4">
+              <span class="card-categoria" style="color:var(--color-danger);">
+                <i class="bi bi-shield-exclamation me-1" aria-hidden="true"></i>Género &amp; Derechos
+              </span>
+              <h3 class="card-title mt-2 fs-5">
+                Ley Rosa Elvira Cely: Colombia le pone nombre al feminicidio
+              </h3>
+              <p class="card-text text-muted small">
+                Desde 2015, el feminicidio es un delito autónomo en Colombia. Analizamos la ley,
+                sus penas y las señales de alerta en el noviazgo adolescente.
+              </p>
+              <a href="genero.html#rosaelvira" class="btn btn-sm btn-primario mt-2">
+                Leer más <i class="bi bi-arrow-right ms-1" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="card-footer bg-transparent border-0 pb-3 px-4">
+              <small class="text-muted">
+                <i class="bi bi-clock me-1" aria-hidden="true"></i>Lectura: 8 min
+              </small>
+            </div>
+          </article>
+        </div>
+
+      </div><!-- /row titulares -->
+    </div>
+  </section><!-- /titulares -->
+
+
+  <!-- ═══════════════════════════════════════════════════════════
+       SECCIÓN 2 — CARTA DEL EDITOR
+       ═══════════════════════════════════════════════════════════ -->
+  <section class="seccion-alt" aria-labelledby="h2-editor">
+    <div class="container">
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+
+          <div class="text-center mb-4">
+            <span class="etiqueta-seccion">Editorial</span>
+            <h2 id="h2-editor" class="mt-1">Carta del Editor</h2>
+          </div>
+
+          <blockquote class="carta-editor animacion-entrada">
+            <p>
+              El Artículo 41 de la Constitución Política de Colombia no es simplemente
+              un mandato para los colegios: es una promesa de la República a sus jóvenes.
+              Nos dice, con claridad meridiana, que en todas las instituciones educativas
+              <strong>se fomentará el conocimiento de la Constitución y la instrucción
+              cívica</strong>. Sin embargo, en demasiados salones de clase ese artículo
+              permanece dormido entre páginas sin leer.
+            </p>
+            <p>
+              Esta revista nace precisamente para despertar ese mandato. Cada sección
+              que leerás en <em>Voz Cívica 11</em> es un acto de cumplimiento de ese
+              artículo: información sobre derechos de la infancia, mecanismos de
+              participación ciudadana, perspectiva de género, convivencia y medio ambiente.
+              Todo redactado por nosotros, los estudiantes, para nosotros mismos.
+            </p>
+            <p>
+              Conocer la Constitución no es un privilegio de abogados; es una herramienta
+              cotidiana para protegernos, exigir y construir. Te invitamos a leer,
+              cuestionar y, sobre todo, a ejercer tu ciudadanía con orgullo.
+            </p>
+            <span class="firma-editor">
+              — El Equipo Editorial · Grado 11 · 2026
+            </span>
+          </blockquote>
+
+          <!-- Artículo 41 en cita formal -->
+          <div class="alert alert-primary mt-4 border-0 rounded-3" role="note">
+            <i class="bi bi-quote fs-4 me-2 text-primary" aria-hidden="true"></i>
+            <strong>Artículo 41, C.P.:</strong>
+            <em>"En todas las instituciones de educación, oficiales o privadas, serán
+            obligatorios el estudio de la Constitución y la Instrucción Cívica."</em>
+            <span class="d-block mt-1 text-muted small">
+              Constitución Política de Colombia, 1991.
+            </span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section><!-- /carta del editor -->
+
+
+  <!-- ═══════════════════════════════════════════════════════════
+       SECCIÓN 3 — ÍNDICE DE CONTENIDOS (navegación visual)
+       ═══════════════════════════════════════════════════════════ -->
+  <section class="seccion" aria-labelledby="h2-indice">
+    <div class="container">
+
+      <div class="text-center mb-5">
+        <span class="etiqueta-seccion">Índice</span>
+        <h2 id="h2-indice" class="mt-1">¿Qué encontrarás en esta revista?</h2>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Fase 2 -->
+        <div class="col-sm-6 col-lg-4 animacion-entrada">
+          <a href="constitucion.html" class="text-decoration-none">
+            <div class="card-revista card p-4 text-center h-100">
+              <div class="mb-3" style="font-size:3rem;" aria-hidden="true">📜</div>
+              <h3 class="fs-5 text-primario">Constitución y Participación</h3>
+              <p class="text-muted small mb-0">
+                Tutela, Derecho de Petición, Plebiscito, Referendo y cómo la Constitución
+                es tu escudo anti-corrupción.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Fase 3 -->
+        <div class="col-sm-6 col-lg-4 animacion-entrada">
+          <a href="infancia.html" class="text-decoration-none">
+            <div class="card-revista card p-4 text-center h-100">
+              <div class="mb-3" style="font-size:3rem;" aria-hidden="true">👶</div>
+              <h3 class="fs-5 text-primario">Ley de Infancia y SRPA</h3>
+              <p class="text-muted small mb-0">
+                Código de Infancia y Adolescencia, interés superior del niño y
+                el Sistema de Responsabilidad Penal para Adolescentes.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Fase 4 -->
+        <div class="col-sm-6 col-lg-4 animacion-entrada">
+          <a href="genero.html" class="text-decoration-none">
+            <div class="card-revista card p-4 text-center h-100">
+              <div class="mb-3" style="font-size:3rem;" aria-hidden="true">♀️</div>
+              <h3 class="fs-5 text-primario">Violencia de Género</h3>
+              <p class="text-muted small mb-0">
+                Tipos de violencia, red flags en el noviazgo, Ley Rosa Elvira Cely
+                y derechos sexuales y reproductivos.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Fase 5 -->
+        <div class="col-sm-6 col-lg-4 animacion-entrada">
+          <a href="ambiente.html" class="text-decoration-none">
+            <div class="card-revista card p-4 text-center h-100">
+              <div class="mb-3" style="font-size:3rem;" aria-hidden="true">🌿</div>
+              <h3 class="fs-5 text-primario">Convivencia y Medio Ambiente</h3>
+              <p class="text-muted small mb-0">
+                Código de Policía, normas de tránsito, protección animal
+                y el Reto Ecológico de 7 días.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Fase 6 -->
+        <div class="col-sm-6 col-lg-4 animacion-entrada">
+          <a href="creditos.html" class="text-decoration-none">
+            <div class="card-revista card p-4 text-center h-100">
+              <div class="mb-3" style="font-size:3rem;" aria-hidden="true">🏅</div>
+              <h3 class="fs-5 text-primario">Créditos y Cierre</h3>
+              <p class="text-muted small mb-0">
+                Pasatiempos jurídicos, equipo editorial, referencias bibliográficas
+                en normas APA 7.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <!-- CTA portada -->
+        <div class="col-sm-6 col-lg-4 animacion-entrada">
+          <div class="card-revista card p-4 text-center h-100 d-flex flex-column justify-content-center"
+            style="background:linear-gradient(135deg,var(--color-primario),var(--color-secundario));color:#fff;">
+            <div class="mb-3" style="font-size:3rem;" aria-hidden="true">🇨🇴</div>
+            <h3 class="fs-5 text-white">¡Sé parte del cambio!</h3>
+            <p class="small mb-3" style="color:rgba(255,255,255,.85);">
+              La ciudadanía activa empieza en el aula. Comparte esta revista con tu comunidad.
+            </p>
+            <a href="constitucion.html" class="btn btn-acento btn-sm">
+              Empezar a leer
+            </a>
+          </div>
+        </div>
+
+      </div><!-- /row índice -->
+    </div>
+  </section><!-- /índice -->
+
+
+  <!-- ═══════════════════════════════════════════════════════════
+       SECCIÓN 4 — IDENTIDAD VISUAL (Paleta y Tipografía)
+       ═══════════════════════════════════════════════════════════ -->
+  <section class="seccion-alt" aria-labelledby="h2-identidad">
+    <div class="container">
+
+      <div class="text-center mb-5">
+        <span class="etiqueta-seccion">Diseño Editorial</span>
+        <h2 id="h2-identidad" class="mt-1">Paleta de Colores y Tipografía</h2>
+        <p class="text-muted">Cada decisión visual tiene un propósito comunicativo deliberado.</p>
+      </div>
+
+      <!-- Paleta de colores -->
+      <h3 class="fs-4 mb-4 text-primario">
+        <i class="bi bi-palette me-2" aria-hidden="true"></i>Paleta Editorial
+      </h3>
+
+      <div class="row g-4 mb-5">
+
+        <!-- Color primario -->
+        <div class="col-6 col-md-3 animacion-entrada">
+          <div class="text-center">
+            <span class="muestra-color d-block mx-auto mb-3"
+              style="background-color:#1e3a8a;"
+              role="img" aria-label="Muestra de color Azul Marino #1e3a8a"></span>
+            <h4 class="fs-6 fw-700">Azul Marino</h4>
+            <code class="small text-muted">#1e3a8a</code>
+            <p class="small text-muted mt-1 mb-0">
+              Representa el rigor legal y la institucionalidad del Estado colombiano.
+              Es el color de las normas, la seriedad y la confianza cívica.
+            </p>
+          </div>
+        </div>
+
+        <!-- Color secundario -->
+        <div class="col-6 col-md-3 animacion-entrada">
+          <div class="text-center">
+            <span class="muestra-color d-block mx-auto mb-3"
+              style="background-color:#0d9488;"
+              role="img" aria-label="Muestra de color Verde Esmeralda #0d9488"></span>
+            <h4 class="fs-6 fw-700">Verde Esmeralda</h4>
+            <code class="small text-muted">#0d9488</code>
+            <p class="small text-muted mt-1 mb-0">
+              Evoca la esperanza, el entorno natural colombiano y la biodiversidad.
+              Refuerza los temas de medio ambiente y convivencia pacífica.
+            </p>
+          </div>
+        </div>
+
+        <!-- Color acento -->
+        <div class="col-6 col-md-3 animacion-entrada">
+          <div class="text-center">
+            <span class="muestra-color d-block mx-auto mb-3"
+              style="background-color:#f59e0b;"
+              role="img" aria-label="Muestra de color Ámbar #f59e0b"></span>
+            <h4 class="fs-6 fw-700">Ámbar</h4>
+            <code class="small text-muted">#f59e0b</code>
+            <p class="small text-muted mt-1 mb-0">
+              Simboliza la juventud, la energía y las alertas cívicas.
+              Se usa para destacar llamados a la acción y datos clave.
+            </p>
+          </div>
+        </div>
+
+        <!-- Color fondo -->
+        <div class="col-6 col-md-3 animacion-entrada">
+          <div class="text-center">
+            <span class="muestra-color d-block mx-auto mb-3"
+              style="background-color:#f8fafc; border:2px solid #e2e8f0;"
+              role="img" aria-label="Muestra de color Gris Claro #f8fafc"></span>
+            <h4 class="fs-6 fw-700">Gris Claro</h4>
+            <code class="small text-muted">#f8fafc</code>
+            <p class="small text-muted mt-1 mb-0">
+              Fondo neutro que garantiza máxima legibilidad y reduce la fatiga visual
+              en lecturas largas. Trasluce ligereza y modernidad.
+            </p>
+          </div>
+        </div>
+
+      </div><!-- /paleta -->
+
+      <!-- Tipografía -->
+      <h3 class="fs-4 mb-4 text-primario">
+        <i class="bi bi-type me-2" aria-hidden="true"></i>Sistema Tipográfico
+      </h3>
+
+      <div class="row g-4">
+
+        <!-- Titulares -->
+        <div class="col-md-6 animacion-entrada">
+          <div class="card-revista card p-4">
+            <div class="card-header-revista card-header mb-3">
+              <i class="bi bi-fonts me-2" aria-hidden="true"></i>Titulares y Subtítulos
+            </div>
+            <div class="card-body p-0">
+              <p class="font-titular fs-2 mb-1" style="color:var(--color-primario);">
+                Playfair Display
+              </p>
+              <p class="small text-muted mb-3">
+                Tipografía serif de carácter periodístico. Transmite autoridad,
+                credibilidad y tradición editorial. Se usa en H1–H4, citas destacadas
+                y nombres de sección.
+              </p>
+              <div class="bg-light rounded p-3">
+                <p class="font-titular fs-4 mb-1">AaBbCcDd 0123</p>
+                <p class="font-titular fw-bold fs-4 mb-0">Negrita — Noticias</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cuerpo -->
+        <div class="col-md-6 animacion-entrada">
+          <div class="card-revista card p-4">
+            <div class="card-header-revista card-header card-header-verde mb-3">
+              <i class="bi bi-text-paragraph me-2" aria-hidden="true"></i>Cuerpo y UI
+            </div>
+            <div class="card-body p-0">
+              <p class="fs-4 mb-1" style="font-family:'Inter',sans-serif; color:var(--color-secundario);">
+                Inter
+              </p>
+              <p class="small text-muted mb-3">
+                Tipografía sans-serif de alta legibilidad en pantalla. Diseñada
+                específicamente para interfaces digitales. Se usa en párrafos,
+                botones, etiquetas y metadatos.
+              </p>
+              <div class="bg-light rounded p-3">
+                <p class="mb-1">AaBbCcDd 0123</p>
+                <p class="fw-600 mb-0">Semibold — Descripción de contenidos</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /tipografía -->
+
+      <!-- Justificación del contraste -->
+      <div class="alert mt-4 border-0 rounded-3 animacion-entrada"
+        style="background:linear-gradient(135deg,#eef2ff,#f0fdfa);">
+        <h4 class="fs-6 fw-700 text-primario mb-2">
+          <i class="bi bi-check-circle me-2" aria-hidden="true"></i>
+          Accesibilidad y Contraste WCAG
+        </h4>
+        <p class="small text-muted mb-0">
+          La combinación de <strong>texto oscuro (#1e293b) sobre fondo claro (#f8fafc)</strong>
+          supera la relación de contraste mínima de 4.5:1 exigida por WCAG 2.1 AA,
+          garantizando legibilidad para personas con baja visión. Los colores acento
+          se usan solo como apoyo visual, nunca como único indicador de información.
+        </p>
+      </div>
+
+    </div>
+  </section><!-- /identidad visual -->
+
+
+  <!-- ═══════════════════════════════════════════════════════════
+       SECCIÓN 5 — DATOS RÁPIDOS (stats editoriales)
+       ═══════════════════════════════════════════════════════════ -->
+  <section class="seccion-oscura" aria-labelledby="h2-datos">
+    <div class="container">
+
+      <div class="text-center mb-5">
+        <span class="etiqueta-seccion">En Números</span>
+        <h2 id="h2-datos" class="mt-1 text-white">Colombia y sus Derechos — Datos que importan</h2>
+      </div>
+
+      <div class="row g-4 text-center">
+        <div class="col-6 col-md-3 animacion-entrada">
+          <div class="dato-destacado">
+            380
+            <small>Artículos tiene la C.P. de Colombia (1991)</small>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 animacion-entrada">
+          <div class="dato-destacado">
+            41
+            <small>Artículo que ordena enseñar la Constitución en colegios</small>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 animacion-entrada">
+          <div class="dato-destacado">
+            10
+            <small>Días para que un juez responda una Acción de Tutela</small>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 animacion-entrada">
+          <div class="dato-destacado">
+            18
+            <small>Años de vigencia de la Ley de Infancia (Ley 1098/2006)</small>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- /datos rápidos -->
+
+
+  <!-- ═══════════════════════════════════════════════════════════
+       PIE DE PÁGINA
+       ═══════════════════════════════════════════════════════════ -->
+  <footer class="footer-revista" role="contentinfo">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <div class="col-md-5 mb-3 mb-md-0">
+          <strong style="font-family:var(--fuente-titular); font-size:1.2rem; color:#fff;">
+            Sin Filtro
+          </strong>
+          <p class="mb-0 mt-1 small">
+            Revista Escolar Digital · Horas constitucionales<br>
+            Colombia · Edición <span id="ano-footer"></span>
+          </p>
+        </div>
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <nav aria-label="Pie de página — páginas">
+            <ul class="list-unstyled d-flex flex-wrap gap-2 mb-0">
+              <li><a href="index.html">Portada</a></li>
+              <li><a href="constitucion.html">Constitución</a></li>
+              <li><a href="infancia.html">Infancia</a></li>
+              <li><a href="genero.html">Género</a></li>
+              <li><a href="ambiente.html">Ambiente</a></li>
+              <li><a href="creditos.html">Créditos</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="col-md-3 text-md-end">
+          <p class="small mb-1">Hecho por Jorman Bermudez, Maria Angel Rosario y Eliezer Garcia</p>
+          <p class="small mb-0">
+            Bajo los principios del <strong style="color:var(--color-acento);">Artículo 41 C.P.</strong>
+          </p>
+        </div>
+
+      </div>
+
+      <hr class="footer-linea my-3" />
+
+      <p class="text-center small mb-0" style="color:rgba(255,255,255,.55);">
+        Contenido con fines educativos · Grado 11 · Colombia ·
+        <span id="ano-footer-2"></span>
+      </p>
+    </div>
+  </footer><!-- /footer -->
+
+
+  <!-- Bootstrap 5 JS Bundle (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc4s9bIOgUxi8T/jzmCAtVHRm5C1BR08LpCIoJOzA9V"
+    crossorigin="anonymous"></script>
+
+  <!-- Script principal de la revista -->
+  <script src="js/main.js"></script>
+
+  <!-- Script local de portada: segundo span de año en footer -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const span2 = document.getElementById('ano-footer-2');
+      if (span2) span2.textContent = new Date().getFullYear();
+    });
+  </script>
+
+</body>
+</html>

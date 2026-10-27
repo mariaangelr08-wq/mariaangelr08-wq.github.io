@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Constitución y Participación Ciudadana — Voz Cívica 11. Tutela, Derecho de Petición, Plebiscito, Referendo y artículo de opinión sobre corrupción." />
+  <title>Constitución y Participación — Voz Cívica 11</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+  <!-- ══════════════════════════════════════════════════════
+       NAVBAR
+       ══════════════════════════════════════════════════════ -->
+  <nav class="navbar navbar-expand-lg navbar-revista sticky-top" aria-label="Navegación principal">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <i class="bi bi-journal-richtext me-2" aria-hidden="true"></i>
+        Sin <span>Filtro</span>
+      </a>
+      <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navPrincipal"
+        aria-controls="navPrincipal" aria-expanded="false"
+        aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navPrincipal">
+        <ul class="navbar-nav ms-auto gap-1">
+          <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-door me-1"></i>Portada</a></li>
+          <li class="nav-item"><a class="nav-link" href="constitucion.html"><i class="bi bi-book me-1"></i>Constitución</a></li>
+          <li class="nav-item"><a class="nav-link" href="infancia.html"><i class="bi bi-people me-1"></i>Infancia</a></li>
+          <li class="nav-item"><a class="nav-link" href="genero.html"><i class="bi bi-gender-female me-1"></i>Género</a></li>
+          <li class="nav-item"><a class="nav-link" href="ambiente.html"><i class="bi bi-tree me-1"></i>Ambiente</a></li>
+          <li class="nav-item"><a class="nav-link" href="creditos.html"><i class="bi bi-award me-1"></i>Créditos</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════════════════════
+       HERO INTERNO
+       ══════════════════════════════════════════════════════ -->
+  <header class="hero-revista" role="banner" style="
+  background-image: linear-gradient(135deg, rgba(30,58,138,0.80) 0%, rgba(13,148,136,0.70) 100%),
+                    url('img/foto-hero.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+">
+
+    <div class="container position-relative" style="z-index:1;">
+      <span class="badge-edicion mb-3 d-inline-block">
+        <i class="bi bi-book me-1"></i>Fase 2 — Constitución y Participación
+      </span>
+      <h1 class="fade-in-up">
+        La Constitución:<br>
+        <span style="color:var(--color-acento);">tu herramienta más poderosa</span>
+      </h1>
+      <p class="subtitulo fade-in-up fade-in-up-delay-1">
+        Mecanismos de participación, derechos fundamentales y cómo usarlos en la vida real.
+      </p>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════════════════════
+       SECCIÓN 1 — MECANISMOS DE PARTICIPACIÓN (Cards)
+       ══════════════════════════════════════════════════════ -->
+  <section class="seccion" aria-labelledby="h2-mecanismos">
+    <div class="container">
+
+      <div class="text-center mb-5">
+        <span class="etiqueta-seccion">Participación Ciudadana</span>
+        <h2 id="h2-mecanismos" class="mt-1">Mecanismos para ejercer tu voz</h2>
+        <p class="text-muted">
+          La Constitución de 1991 consagró en su Artículo 103 siete mecanismos de
+          participación directa. Aquí los cuatro más relevantes para jóvenes colombianos.
+        </p>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Card: Acción de Tutela -->
+        <div class="col-md-6 col-lg-3 animacion-entrada" id="tutela">
+          <div class="card-revista card h-100">
+            <div class="card-header-revista card-header text-center py-3">
+              <i class="bi bi-shield-check fs-2 d-block mb-1" aria-hidden="true"></i>
+              Acción de Tutela
+            </div>
+            <div class="card-body p-3">
+              <span class="badge badge-ambar badge mb-2">Art. 86 C.P.</span>
+              <p class="small mb-2">
+                <strong>¿Qué es?</strong> Mecanismo judicial para proteger de forma
+                <em>inmediata</em> los derechos fundamentales cuando son vulnerados
+                o amenazados por una autoridad pública o, en algunos casos, por particulares.
+              </p>
+              <p class="small mb-2">
+                <strong>¿Quién la interpone?</strong> Cualquier persona, sin necesidad
+                de abogado. Incluso menores de edad con capacidad de comprensión.
+              </p>
+              <p class="small mb-2">
+                <strong>Tiempo de respuesta:</strong>
+                <span class="badge badge-primario badge text-white">10 días hábiles</span>
+              </p>
+              <p class="small mb-0">
+                <strong>Ejemplos en el colegio:</strong> Suspensión injustificada,
+                vulneración del libre desarrollo de la personalidad, negativa
+                a entregar notas o certificados.
+              </p>
+            </div>
+            <div class="card-footer bg-transparent border-top">
+              <a href="#guia-tutela" class="btn btn-sm btn-primario w-100">
+                Ver guía paso a paso <i class="bi bi-arrow-down ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card: Derecho de Petición -->
+        <div class="col-md-6 col-lg-3 animacion-entrada">
+          <div class="card-revista card h-100">
+            <div class="card-header-revista card-header card-header-verde text-center py-3">
+              <i class="bi bi-envelope-paper fs-2 d-block mb-1" aria-hidden="true"></i>
+              Derecho de Petición
+            </div>
+            <div class="card-body p-3">
+              <span class="badge badge-verde badge text-white mb-2">Art. 23 C.P.</span>
+              <p class="small mb-2">
+                <strong>¿Qué es?</strong> El derecho de toda persona a presentar
+                solicitudes respetuosas ante autoridades públicas y entidades privadas
+                que presten servicios públicos, y a obtener una respuesta pronta y de fondo.
+              </p>
+              <p class="small mb-2">
+                <strong>Plazo de respuesta:</strong>
+                <span class="badge badge-verde badge text-white">15 días hábiles</span>
+                para documentos;
+                <span class="badge badge-verde badge text-white">30 días</span>
+                para consultas generales.
+              </p>
+              <p class="small mb-0">
+                <strong>Usos frecuentes:</strong> Solicitar información al rector,
+                pedir copia del Manual de Convivencia, consultar decisiones del gobierno local.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card: Plebiscito -->
+        <div class="col-md-6 col-lg-3 animacion-entrada">
+          <div class="card-revista card h-100">
+            <div class="card-header-revista card-header card-header-ambar text-center py-3">
+              <i class="bi bi-ballot fs-2 d-block mb-1" aria-hidden="true"></i>
+              Plebiscito
+            </div>
+            <div class="card-body p-3">
+              <span class="badge badge-ambar badge mb-2">Ley 134 de 1994</span>
+              <p class="small mb-2">
+                <strong>¿Qué es?</strong> Pronunciamiento del pueblo convocado por el
+                Presidente de la República para apoyar o rechazar una <em>decisión del
+                Ejecutivo</em> que no requiera aprobación del Congreso.
+              </p>
+              <p class="small mb-2">
+                <strong>Diferencia clave:</strong> El presidente pregunta sobre su
+                gestión o política de gobierno. No cambia la ley directamente.
+              </p>
+              <p class="small mb-0">
+                <strong>Caso histórico:</strong> El plebiscito de octubre de 2016 sobre
+                los acuerdos de paz con las FARC-EP fue el más relevante en la historia
+                reciente del país.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card: Referendo -->
+        <div class="col-md-6 col-lg-3 animacion-entrada">
+          <div class="card-revista card h-100">
+            <div class="card-header-revista card-header text-center py-3"
+              style="background:var(--color-danger);">
+              <i class="bi bi-megaphone fs-2 d-block mb-1" aria-hidden="true"></i>
+              Referendo
+            </div>
+            <div class="card-body p-3">
+              <span class="badge badge-danger badge text-white mb-2">Art. 374–378 C.P.</span>
+              <p class="small mb-2">
+                <strong>¿Qué es?</strong> Convocatoria al pueblo para que apruebe o
+                rechace un <em>proyecto de norma jurídica</em> o derogue una vigente.
+                Puede ser constitucional o legislativo.
+              </p>
+              <p class="small mb-2">
+                <strong>Tipos:</strong> Aprobatorio (adoptar una norma) o
+                Derogatorio (eliminarla). Lo puede convocar el Congreso,
+                el Presidente o la ciudadanía con firmas.
+              </p>
+              <p class="small mb-0">
+                <strong>Requisito ciudadano:</strong> Apoyo del
+                <strong>5 % del censo electoral</strong> para iniciarlo desde la ciudadanía.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /row mecanismos -->
+
+      <!-- Tabla comparativa rápida -->
+      <div class="mt-5 animacion-entrada">
+        <h3 class="fs-5 text-primario mb-3">
+          <i class="bi bi-table me-2" aria-hidden="true"></i>Comparativa rápida
+        </h3>
+        <div class="table-responsive">
+          <table class="table tabla-violencias table-bordered align-middle mb-0">
+            <thead>
+              <tr>
+                <th scope="col">Mecanismo</th>
+                <th scope="col">¿Quién lo activa?</th>
+                <th scope="col">¿Sobre qué?</th>
+                <th scope="col">Plazo respuesta</th>
+                <th scope="col">Requiere abogado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Acción de Tutela</strong></td>
+                <td>Cualquier persona</td>
+                <td>Derechos fundamentales vulnerados</td>
+                <td><span class="badge badge-primario badge text-white">10 días</span></td>
+                <td><span class="text-success fw-bold">No</span></td>
+              </tr>
+              <tr>
+                <td><strong>Derecho de Petición</strong></td>
+                <td>Cualquier persona</td>
+                <td>Solicitudes de información o servicio</td>
+                <td><span class="badge badge-verde badge text-white">15–30 días</span></td>
+                <td><span class="text-success fw-bold">No</span></td>
+              </tr>
+              <tr>
+                <td><strong>Plebiscito</strong></td>
+                <td>Presidente de la República</td>
+                <td>Decisiones del Ejecutivo</td>
+                <td>Campaña mínima 1 mes</td>
+                <td><span class="text-success fw-bold">No aplica</span></td>
+              </tr>
+              <tr>
+                <td><strong>Referendo</strong></td>
+                <td>Congreso, Presidente o ciudadanía (5 % censo)</td>
+                <td>Normas jurídicas</td>
+                <td>Proceso legislativo completo</td>
+                <td><span class="text-success fw-bold">Recomendable</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════════
+       SECCIÓN 2 — ARTÍCULO DE OPINIÓN
+       ══════════════════════════════════════════════════════ -->
+  <section class="seccion-alt" aria-labelledby="h2-opinion">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+
+          <span class="etiqueta-seccion">Artículo de Opinión</span>
+          <h2 id="h2-opinion" class="mt-2 mb-1">
+            ¿Por qué conocer la Constitución es la mejor herramienta contra la corrupción en Colombia?
+          </h2>
+          <p class="text-muted small mb-4">
+            <i class="bi bi-person-circle me-1"></i>Por el Equipo Editorial · Grado 11 ·
+            <time datetime="2026-05-01">Mayo 2026</time> ·
+            <i class="bi bi-clock me-1"></i>Lectura: 8 min
+          </p>
+
+          <article class="articulo-opinion">
+            <p class="drop-cap">
+              Colombia ocupa históricamente posiciones preocupantes en los índices
+              globales de percepción de corrupción. Según Transparencia Internacional,
+              el país obtiene puntuaciones que reflejan una corrupción sistemática tanto
+              en el sector público como en el privado. Sin embargo, existe un antídoto
+              tan poderoso como subestimado: la ciudadanía informada. Conocer la
+              Constitución Política no es un ejercicio académico reservado para abogados;
+              es el acto político más disruptivo que puede realizar un ciudadano ordinario.
+            </p>
+
+            <h3 class="fs-5 mt-4 mb-2 text-primario">
+              <i class="bi bi-lightbulb me-2" aria-hidden="true"></i>
+              La ignorancia jurídica como cómplice de la corrupción
+            </h3>
+            <p>
+              La corrupción prospera en los espacios donde la ciudadanía no sabe
+              qué puede exigir. Cuando un funcionario cobra "una colaboración" para
+              agilizar un trámite, está aprovechando que el ciudadano desconoce que
+              ese servicio es gratuito por ley. Cuando un rector suspende a un
+              estudiante arbitrariamente, cuenta con que nadie sabrá que puede
+              interponer una Acción de Tutela. Cuando un contratista infla un
+              presupuesto público, espera que ningún vecino consulte los portales
+              de contratación estatal como SECOP o SIGEP.
+            </p>
+            <p>
+              El Artículo 209 de la Constitución establece que la función pública
+              está al servicio del interés general y debe regirse por los principios de
+              <strong>igualdad, moralidad, eficacia, economía, celeridad, imparcialidad
+              y publicidad</strong>. Estos no son ideales inalcanzables: son derechos
+              exigibles. Pero solo se pueden exigir cuando se conocen.
+            </p>
+
+            <h3 class="fs-5 mt-4 mb-2 text-primario">
+              <i class="bi bi-tools me-2" aria-hidden="true"></i>
+              Las herramientas que ya existen
+            </h3>
+            <p>
+              La Constitución de 1991 fue, en muchos sentidos, una revolución jurídica.
+              Por primera vez en Colombia, cualquier ciudadano podía en un solo día
+              redactar una tutela, llevarla a cualquier despacho judicial y obligar al
+              Estado a responder en diez días. Esta herramienta, diseñada inicialmente
+              para proteger derechos individuales, se ha convertido en un termómetro
+              de la salud institucional del país. Las tutelas masivas contra entidades
+              como la EPS, el ICFES o las alcaldías revelan patrones de negligencia
+              que, cuando se documentan colectivamente, configuran lo que los
+              investigadores llaman <em>corrupción estructural</em>.
+            </p>
+            <p>
+              El Derecho de Petición (Art. 23) obliga a cualquier entidad pública a
+              responder en quince días hábiles. Combinado con las normas de transparencia
+              y acceso a la información pública (Ley 1712 de 2014), este mecanismo
+              permite a periodistas, estudiantes y ciudadanos de a pie auditar el gasto
+              público, verificar contratos y exigir rendición de cuentas sin necesidad
+              de un equipo de abogados.
+            </p>
+
+            <h3 class="fs-5 mt-4 mb-2 text-primario">
+              <i class="bi bi-person-raised-hand me-2" aria-hidden="true"></i>
+              El rol de los jóvenes en la ruptura del ciclo
+            </h3>
+            <p>
+              Los jóvenes colombianos son la generación más conectada y con mayor
+              acceso a información de la historia del país. Paradójicamente, estudios
+              de la Registraduría muestran que la abstención electoral entre menores
+              de 30 años supera el 60 %. Esta paradoja no se resuelve con apelos
+              emotivos al patriotismo, sino con educación cívica concreta.
+            </p>
+            <p>
+              Cuando un joven de grado once sabe que puede participar como
+              veedor ciudadano en la ejecución de obras de su barrio, que puede
+              denunciar irregularidades ante la Contraloría o la Procuraduría sin
+              necesidad de abogado, y que su voto en un referendo o una consulta
+              popular puede revertir una decisión que afecta a su comunidad, deja
+              de ser un espectador para convertirse en un agente de cambio.
+            </p>
+
+            <h3 class="fs-5 mt-4 mb-2 text-primario">
+              <i class="bi bi-flag me-2" aria-hidden="true"></i>
+              Conclusión: la Constitución como acto de rebeldía cívica
+            </h3>
+            <p>
+              Leer y entender la Constitución no es un acto pasivo. Es una declaración
+              de que el ciudadano no está dispuesto a ser engañado. La corrupción le
+              teme más a una comunidad organizada y jurídicamente informada que a
+              cualquier ley anticorrupción que duerma en el Congreso. En Colombia,
+              donde la impunidad ha sido históricamente el mayor incentivo para la
+              corrupción, la ciudadanía activa y constitucional es, sin exageración,
+              el mecanismo más efectivo de control que existe.
+            </p>
+            <p class="fst-italic text-muted">
+              "La soberanía reside exclusivamente en el pueblo, del cual emana el poder público."
+              — Artículo 3, Constitución Política de Colombia, 1991.
+            </p>
+          </article>
+
+          <!-- Datos de contexto -->
+          <div class="row g-3 mt-3">
+            <div class="col-6 col-md-3">
+              <div class="dato-destacado">
+                39°
+                <small>Puesto Colombia en IPC 2023 (sobre 100)</small>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="dato-destacado">
+                1M+
+                <small>Tutelas interpuestas al año en Colombia</small>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="dato-destacado">
+                60%
+                <small>Abstención electoral jóvenes &lt;30 años</small>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="dato-destacado">
+                15
+                <small>Días para que respondan tu Derecho de Petición</small>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════════
+       SECCIÓN 3 — ENTREVISTA: DERECHOS EN EL COLEGIO
+       ══════════════════════════════════════════════════════ -->
+  <section class="seccion" aria-labelledby="h2-entrevista">
+    <div class="container">
+
+      <div class="text-center mb-5">
+        <span class="etiqueta-seccion">Entrevista</span>
+        <h2 id="h2-entrevista" class="mt-1">
+          "En el colegio también se vulneran derechos"
+        </h2>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Entrevistado 1 -->
+        <div class="col-md-4 animacion-entrada">
+          <div class="card-revista card h-100 p-0 overflow-hidden">
+            <!-- Espacio para fotografía -->
+            <img src="img/Foto1.jpeg"
+                alt="Maryori, Profesora"
+                style="width:100%; aspect-ratio:3/2; object-fit:cover; object-position:50% 20%;
+               border-radius:var(--radio-lg) var(--radio-lg) 0 0;">
+
+            <div class="card-body p-4">
+              <h3 class="fs-5 text-primario">Maryori</h3>
+              <span class="badge badge-ambar badge mb-3">Profesora</span>
+              <blockquote class="border-start border-3 ps-3 fst-italic small"
+                style="border-color:var(--color-acento)!important;">
+                 Según lo expresado en la entrevista, los derechos que más se vulneran
+                 son el respeto y el debido proceso. Respecto al respeto, señala que 
+                 es fundamental «porque si yo respeto al otro y entiendo que todos tenemos 
+                 una misma posición, sé que yo puedo expresar lo que pienso y que tengo obligación 
+                 de escuchar al otro», advirtiendo además que «en ocasiones hay algunos estudiantes
+                 que resuelven a primera mano con agresión». En cuanto al debido proceso, afirma
+                 que se vulnera «porque los estudiantes no están teniendo un acompañamiento
+                 para la actividad de sus faltas», lo que genera que «se lleva al comité de
+                 convivencia y pareciera que muriera el proceso», haciendo que los
+                 estudiantes no tomen las medidas disciplinarias con la gravedad necesaria.
+              </blockquote>
+              
+            </div>
+          </div>
+        </div>
+
+        <!-- Entrevistado 2 -->
+        <div class="col-md-4 animacion-entrada">
+          <div class="card-revista card h-100 p-0 overflow-hidden">
+            <img src="img/Foto2.jpeg"
+                 alt="Adriana, Profesora"
+                 style="width:100%; aspect-ratio:3/2; object-fit:cover; object-position: 50% 20%;
+                border-radius:var(--radio-lg) var(--radio-lg) 0 0;">
+
+            <div class="card-body p-4">
+              <h3 class="fs-5 text-primario">Adriana</h3>
+              <span class="badge badge-primario badge text-white mb-3">Profesora</span>
+              <blockquote class="border-start border-3 ps-3 fst-italic small"
+                style="border-color:var(--color-primario)!important;">
+                Al hablar sobre la vulneración de derechos dentro de la institución,
+                 la profesora señala que el derecho a la intimidad es el que más se
+                 ve afectado entre los estudiantes.
+                 Según explica, esto ocurre principalmente por la cultura del rumor
+                  y el chisme, donde es común hablar mal de los demás o inventar cosas.
+                 Además, menciona que el problema se agrava cuando los jóvenes toman 
+                 fotografías o graban videos durante conflictos y los divulgan sin
+                autorización en redes sociales o grupos de Facebook, exponiendo
+                 vida privada de sus compañeros y vulnerando directamente su privacidad.
+              </blockquote>
+              
+            </div>
+          </div>
+        </div>
+
+        <!-- Entrevistado 3 -->
+        <div class="col-md-4 animacion-entrada">
+          <div class="card-revista card h-100 p-0 overflow-hidden">
+            <img src="img/Foto3.jpeg"
+                 alt="Arquimedes, profesor"
+                 style="width:100%; aspect-ratio:3/2; object-fit:cover; object-position: 50% 30%;
+                 border-radius:var(--radio-lg) var(--radio-lg) 0 0;">
+
+            <div class="card-body p-4">
+              <h3 class="fs-5 text-primario">Arquimedes</h3>
+              <span class="badge badge-verde badge text-white mb-3">Profesor</span>
+              <blockquote class="border-start border-3 ps-3 fst-italic small"
+                style="border-color:var(--color-secundario)!important;">
+                Según la entrevista con el profesor, el derecho que los estudiantes
+                 más reclaman y el que más sienten que se vulnera es el desarrollo 
+                 de la libre personalidad.
+
+                 El docente explicó que este es un derecho fundamental para la
+                 identidad de cada joven, pero recordó que siempre debe ir de la mano
+                 con los deberes: se puede ejercer libremente, siempre y cuando 
+                 no afecte a las demás personas de la comunidad.
+              </blockquote>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /row entrevistas -->
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════════
+       SECCIÓN 4 — GUÍA PASO A PASO: ACCIÓN DE TUTELA
+       ══════════════════════════════════════════════════════ -->
+  <section class="seccion-alt" id="guia-tutela" aria-labelledby="h2-guia-tutela">
+    <div class="container">
+
+      <div class="text-center mb-5">
+        <span class="etiqueta-seccion">Guía Práctica</span>
+        <h2 id="h2-guia-tutela" class="mt-1">
+          Cómo redactar y radicar una Acción de Tutela
+          <br><small class="fs-5 text-muted">por libre desarrollo de la personalidad</small>
+        </h2>
+        <p class="text-muted">
+          Seguimiento del Decreto 2591 de 1991, que reglamenta la Acción de Tutela
+          consagrada en el Artículo 86 de la Constitución Política.
+        </p>
+      </div>
+
+      <!-- Alerta antes de empezar -->
+      <div class="alert alert-warning border-0 rounded-3 mb-5" role="note">
+        <i class="bi bi-exclamation-triangle me-2" aria-hidden="true"></i>
+        <strong>Importante:</strong> Esta guía es informativa y educativa.
+        Para casos complejos, busca orientación en la
+        <strong>Defensoría del Pueblo</strong> (línea gratuita: 01 8000 914 814) o
+        en el consultorio jurídico de la universidad más cercana.
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+
+          <!-- Timeline de pasos -->
+          <div class="timeline">
+
+            <!-- Paso 1 -->
+            <div class="timeline-item animacion-entrada">
+              <div class="card-revista card p-4">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                  <span class="badge badge-primario badge text-white fs-5 px-3 py-2">1</span>
+                  <h3 class="timeline-titulo mb-0">Identifica el derecho vulnerado</h3>
+                </div>
+                <p class="small mb-2">
+                  Para tutelas por <strong>libre desarrollo de la personalidad</strong>
+                  (Art. 16 C.P.), el hecho generador suele ser:
+                </p>
+                <ul class="small mb-0">
+                  <li>Prohibición arbitraria del corte de cabello, tatuajes o forma de vestir.</li>
+                  <li>Sanción por orientación sexual o identidad de género.</li>
+                  <li>Restricción de creencias religiosas o expresiones personales
+                      no contrarias al orden público.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Paso 2 -->
+            <div class="timeline-item animacion-entrada">
+              <div class="card-revista card p-4">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                  <span class="badge badge-primario badge text-white fs-5 px-3 py-2">2</span>
+                  <h3 class="timeline-titulo mb-0">Reúne las pruebas</h3>
+                </div>
+                <div class="row g-2">
+                  <div class="col-6">
+                    <div class="bg-light rounded p-2 small">
+                      <i class="bi bi-file-text me-1 text-primario" aria-hidden="true"></i>
+                      Comunicados o circulares del colegio
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="bg-light rounded p-2 small">
+                      <i class="bi bi-camera me-1 text-primario" aria-hidden="true"></i>
+                      Fotografías con fecha y hora
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="bg-light rounded p-2 small">
+                      <i class="bi bi-chat-dots me-1 text-primario" aria-hidden="true"></i>
+                      Mensajes escritos o correos electrónicos
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="bg-light rounded p-2 small">
+                      <i class="bi bi-people me-1 text-primario" aria-hidden="true"></i>
+                      Declaraciones de testigos (compañeros, docentes)
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Paso 3 -->
+            <div class="timeline-item animacion-entrada">
+              <div class="card-revista card p-4">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                  <span class="badge badge-primario badge text-white fs-5 px-3 py-2">3</span>
+                  <h3 class="timeline-titulo mb-0">Redacta el escrito de tutela</h3>
+                </div>
+                <p class="small mb-3">
+                  No existe un formato único. Debe incluir los siguientes elementos
+                  según el Art. 14 del Decreto 2591/1991:
+                </p>
+
+                <!-- Modelo de escrito -->
+                <div class="bg-light border rounded-3 p-4 small font-mono"
+                  style="font-family:var(--fuente-mono); line-height:1.9; border-color:#cbd5e1!important;">
+                  <p class="mb-1"><strong>SEÑOR JUEZ CIVIL MUNICIPAL (o quien reparta)</strong></p>
+                  <p class="mb-3">Ciudad, Fecha</p>
+
+                  <p class="mb-1">
+                    <strong>ACCIÓN DE TUTELA</strong><br>
+                    <strong>ACCIONANTE:</strong> [Tu nombre completo], mayor/menor de edad,
+                    identificado con [CC / TI] N.° [número], domiciliado en [ciudad].
+                  </p>
+                  <p class="mb-1">
+                    <strong>ACCIONADO:</strong> [Nombre del rector/a o institución],
+                    rector/a del [Nombre del colegio], ubicado en [dirección].
+                  </p>
+
+                  <p class="mt-3 mb-1"><strong>HECHOS:</strong></p>
+                  <p class="mb-1">
+                    1. El día [fecha], la directiva de la institución me notificó
+                    [descripción exacta del hecho: sanción, prohibición, etc.].<br>
+                    2. Dicha decisión no tiene sustento en ninguna norma de orden
+                    público que justifique la limitación de mi autonomía personal.<br>
+                    3. [Agrega cuantos hechos sean necesarios, en orden cronológico.]
+                  </p>
+
+                  <p class="mt-3 mb-1"><strong>DERECHO VULNERADO:</strong></p>
+                  <p class="mb-1">
+                    El Artículo 16 de la Constitución Política consagra el derecho
+                    al libre desarrollo de la personalidad "sin más limitaciones que
+                    las que imponen los derechos de los demás y el orden jurídico".
+                    La jurisprudencia de la Corte Constitucional (T-065/93, T-248/96,
+                    T-562/13) ha protegido reiteradamente este derecho en contextos educativos.
+                  </p>
+
+                  <p class="mt-3 mb-1"><strong>PRETENSIÓN:</strong></p>
+                  <p class="mb-1">
+                    Se solicita al despacho judicial que, mediante fallo de tutela,
+                    <strong>ordene a [nombre del accionado] cesar de inmediato</strong>
+                    la conducta vulneradora y [restituir condición, readmitir, etc.].
+                  </p>
+
+                  <p class="mt-3 mb-1"><strong>PRUEBAS:</strong></p>
+                  <p class="mb-1">
+                    Se adjuntan: [lista los documentos que recopilaste en el Paso 2].
+                  </p>
+
+                  <p class="mt-3 mb-0">
+                    Atentamente,<br>
+                    [Firma]<br>
+                    [Nombre completo] — CC/TI [número]<br>
+                    [Teléfono de contacto] · [Correo electrónico]
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Paso 4 -->
+            <div class="timeline-item animacion-entrada">
+              <div class="card-revista card p-4">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                  <span class="badge badge-primario badge text-white fs-5 px-3 py-2">4</span>
+                  <h3 class="timeline-titulo mb-0">Radica la tutela</h3>
+                </div>
+                <p class="small mb-2">
+                  Puedes presentarla en <strong>cualquiera</strong> de estos lugares:
+                </p>
+                <div class="row g-2 small">
+                  <div class="col-md-6">
+                    <div class="directorio-card icbf">
+                      <i class="bi bi-building me-2 text-secundario" aria-hidden="true"></i>
+                      <strong>Juzgados civiles, penales, laborales o promiscuos</strong>
+                      del municipio donde ocurrieron los hechos.
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="directorio-card comisaria">
+                      <i class="bi bi-shield me-2 text-primario" aria-hidden="true"></i>
+                      <strong>Tribunales Superiores o Consejo de Estado</strong>
+                      si el accionado es una entidad de mayor jerarquía.
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="directorio-card policia">
+                      <i class="bi bi-laptop me-2 text-acento" aria-hidden="true"></i>
+                      <strong>Correo electrónico oficial del despacho judicial.</strong>
+                      Desde 2020, la tutela electrónica tiene plena validez legal.
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="directorio-card icbf">
+                      <i class="bi bi-telephone me-2 text-secundario" aria-hidden="true"></i>
+                      <strong>Defensoría del Pueblo</strong> — te ayudan a radicarla
+                      gratuitamente. Línea: 01 8000 914 814
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Paso 5 -->
+            <div class="timeline-item animacion-entrada">
+              <div class="card-revista card p-4">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                  <span class="badge badge-verde badge text-white fs-5 px-3 py-2">5</span>
+                  <h3 class="timeline-titulo mb-0">
+                    <i class="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i>
+                    Espera el fallo y haz seguimiento
+                  </h3>
+                </div>
+                <div class="row g-3 small">
+                  <div class="col-sm-4">
+                    <div class="text-center p-3 bg-light rounded">
+                      <strong style="font-size:1.8rem; color:var(--color-primario);">10</strong>
+                      <p class="mb-0">días hábiles para el fallo</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="text-center p-3 bg-light rounded">
+                      <strong style="font-size:1.8rem; color:var(--color-secundario);">3</strong>
+                      <p class="mb-0">días para apelar si falla en contra</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="text-center p-3 bg-light rounded">
+                      <strong style="font-size:1.8rem; color:var(--color-acento);">48h</strong>
+                      <p class="mb-0">para cumplimiento del fallo a favor</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="small mt-3 mb-0">
+                  Si el accionado incumple el fallo, puedes solicitar
+                  <strong>desacato</strong>, que puede implicar arresto y multa
+                  para el funcionario responsable.
+                </p>
+              </div>
+            </div>
+
+          </div><!-- /timeline -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════════
+       PIE DE PÁGINA
+       ══════════════════════════════════════════════════════ -->
+  <footer class="footer-revista" role="contentinfo">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-3 mb-md-0">
+          <strong style="font-family:var(--fuente-titular);font-size:1.1rem;color:#fff;">
+            Voz Cívica 11
+          </strong>
+          <p class="mb-0 mt-1 small">
+            Revista Escolar Digital · Grado 11 · Colombia · <span id="ano-footer"></span>
+          </p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <nav aria-label="Pie de página">
+            <ul class="list-unstyled d-flex flex-wrap justify-content-md-end gap-2 mb-0">
+              <li><a href="index.html">Portada</a></li>
+              <li><a href="constitucion.html">Constitución</a></li>
+              <li><a href="infancia.html">Infancia</a></li>
+              <li><a href="genero.html">Género</a></li>
+              <li><a href="ambiente.html">Ambiente</a></li>
+              <li><a href="creditos.html">Créditos</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <hr class="footer-linea my-3" />
+      <p class="text-center small mb-0" style="color:rgba(255,255,255,.55);">
+        Contenido con fines educativos · Artículo 41 C.P.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc4s9bIOgUxi8T/jzmCAtVHRm5C1BR08LpCIoJOzA9V"
+    crossorigin="anonymous"></script>
+  <!-- JS propio -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Violencia de Género y Derechos Reproductivos — Sin Filtro. Ley Rosa Elvira Cely, red flags, derechos sexuales y test Mito vs. Realidad." />
+  <title>Género y Derechos Reproductivos — Sin Filtro</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Estilos extra específicos de esta página -->
+  <style>
+    /* Fila de tabla de violencias con color de tipo */
+    .tipo-fisica   { border-left: 5px solid #dc2626; }
+    .tipo-psico    { border-left: 5px solid #7c3aed; }
+    .tipo-eco      { border-left: 5px solid #d97706; }
+    .tipo-sexual   { border-left: 5px solid #be185d; }
+    .tipo-simbolica{ border-left: 5px solid #0d9488; }
+
+    /* Red flags */
+    .redflag-item {
+      background: #fff5f5;
+      border: 1.5px solid #fecaca;
+      border-left: 5px solid #dc2626;
+      border-radius: var(--radio-md);
+      padding: .75rem 1rem;
+      margin-bottom: .6rem;
+      font-size: .93rem;
+    }
+    .redflag-item .rf-icon { font-size: 1.2rem; margin-right: .5rem; }
+
+    /* Marcador de score del test */
+    #score-display {
+      font-size: 2.5rem;
+      font-weight: 800;
+      font-family: var(--fuente-titular);
+      color: var(--color-primario);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ══════════════════════════════════════════════════════
+       NAVBAR
+       ══════════════════════════════════════════════════════ -->
+  <nav class="navbar navbar-expand-lg navbar-revista sticky-top" aria-label="Navegación principal">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <i class="bi bi-journal-richtext me-2" aria-hidden="true"></i>
+        Sin <span>Filtro</span> 
+      </a>
+      <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navPrincipal"
+        aria-controls="navPrincipal" aria-expanded="false"
+        aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navPrincipal">
+        <ul class="navbar-nav ms-auto gap-1">
+          <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-door me-1"></i>Portada</a></li>
+          <li class="nav-item"><a class="nav-link" href="constitucion.html"><i class="bi bi-book me-1"></i>Constitución</a></li>
+          <li class="nav-item"><a class="nav-link" href="infancia.html"><i class="bi bi-people me-1"></i>Infancia</a></li>
+          <li class="nav-item"><a class="nav-link" href="genero.html"><i class="bi bi-gender-female me-1"></i>Género</a></li>
+          <li class="nav-item"><a class="nav-link" href="ambiente.html"><i class="bi bi-tree me-1"></i>Ambiente</a></li>
+          <li class="nav-item"><a class="nav-link" href="creditos.html"><i class="bi bi-award me-1"></i>Créditos</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════════════════════
+       HERO INTERNO
+       ══════════════════════════════════════════════════════ -->
+  <header class="hero-revista" role="banner" 
+  style="background-image: linear-gradient(135deg, rgba(30,58,138,0.80) 0%, rgba(13,148,136,0.70) 100%),url('img/foto-hero.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+">
+
+    <div class="container position-relative" style="z-index:1;">
+      <span class="badge-edicion mb-3 d-inline-block">
+        <i class="bi bi-gender-female me-1"></i>Fase 4 — Violencia de Género y Derechos Reproductivos
+      </span>
+      <h1 class="fade-in-up">
+        Género, cuerpo<br>
+        <span style="color:var(--color-acento);">y derechos que nos pertenecen</span>
+      </h1>
+      <p class="subtitulo fade-in-up fade-in-up-delay-1">
+        Tipos de violencia, señales de alerta, Ley Rosa Elvira Cely y
+        derechos sexuales y reproductivos en Colombia.
+      </p>
+      <!-- Aviso de contenido sensible -->
+      <div class="alert alert-warning border-0 mt-4 py-2 px-3 d-inline-flex align-items-center gap-2"
+        style="font-size:.88rem; border-radius:var(--radio-md);" role="note">
+        <i class="bi bi-exclamation-triangle-fill" aria-hidden="true"></i>
+        <span>Este contenido aborda temas de violencia de género. Si necesitas ayuda,
+        llama a la <strong>Línea 155</strong> (gratuita, 24 h).</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════════════════════
+       SECCIÓN 1 — TABLA COMPARATIVA DE TIPOS DE VIOLENCIA
+       ══════════════════════════════════════════════════════ -->
+  <section class="seccion" aria-labelledby="h2-tipos-violencia">
+    <div class="container">
+
+      <div class="text-center mb-5">
+        <span class="etiqueta-seccion">Marco conceptual</span>
+        <h2 id="h2-tipos-violencia" class="mt-1">Tipos de violencia de género</h2>
+        <p class="text-muted">
+          La violencia de género no siempre deja marcas visibles. Conocer sus formas
+          es el primer paso para identificarla, denunciarla y prevenirla.
+          Clasificación basada en la Ley 1257 de 2008 y la OPS.
+        </p>
+      </div>
+
+      <!-- Vista tarjetas (móvil y escritorio) -->
+      <div class="row g-3 mb-4">
+
+        <!-- Física -->
+        <div class="col-md-6 col-lg-4 animacion-entrada">
+          <div class="card h-100 tipo-fisica" style="border-radius:var(--radio-md);">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <span style="font-size:2rem;" aria-hidden="true">👊</span>
+                <div>
+                  <h3 class="fs-6 mb-0" style="color:#dc2626;">Violencia Física</h3>
+                  <span class="badge bg-danger text-white small">La más visible</span>
+                </div>
+              </div>
+              <p class="small mb-2">
+                <strong>Definición:</strong> Cualquier acto que cause daño corporal —
+                golpes, empujones, quemaduras, restricción de movimiento.
+              </p>
+              <p class="small mb-2">
+                <strong>Ejemplos cotidianos en el noviazgo:</strong>
+              </p>
+              <ul class="small mb-0 ps-3">
+                <li>Jalar del brazo o del cabello "en broma".</li>
+                <li>Pellizcos que dejan moretones.</li>
+                <li>Bloquear la salida de una habitación.</li>
+                <li>Romper objetos personales en un arrebato.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Psicológica -->
+        <div class="col-md-6 col-lg-4 animacion-entrada">
+          <div class="card h-100 tipo-psico" style="border-radius:var(--radio-md);">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <span style="font-size:2rem;" aria-hidden="true">🧠</span>
+                <div>
+                  <h3 class="fs-6 mb-0" style="color:#7c3aed;">Violencia Psicológica</h3>
+                  <span class="badge text-white small" style="background:#7c3aed;">La más común</span>
+                </div>
+              </div>
+              <p class="small mb-2">
+                <strong>Definición:</strong> Acciones u omisiones que causan daño emocional,
+                miedo, baja autoestima o dependencia afectiva.
+              </p>
+              <p class="small mb-2"><strong>Ejemplos cotidianos:</strong></p>
+              <ul class="small mb-0 ps-3">
+                <li>"Sin mí no eres nadie" / humillaciones en público.</li>
+                <li>Revisión constante del celular o redes sociales.</li>
+                <li>Amenazas de suicidio para evitar la ruptura.</li>
+                <li>Aislamiento de amigos y familia.</li>
+                <li>Gaslighting: hacer dudar de la propia percepción.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Económica -->
+        <div class="col-md-6 col-lg-4 animacion-entrada">
+          <div class="card h-100 tipo-eco" style="border-radius:var(--radio-md);">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <span style="font-size:2rem;" aria-hidden="true">💸</span>
+                <div>
+                  <h3 class="fs-6 mb-0" style="color:#d97706;">Violencia Económica</h3>
+                  <span class="badge text-white small" style="background:#d97706;">Muy normalizada</span>
+                </div>
+              </div>
+              <p class="small mb-2">
+                <strong>Definición:</strong> Control del acceso a recursos económicos
+                con el fin de generar dependencia o castigo.
+              </p>
+              <p class="small mb-2"><strong>Ejemplos cotidianos:</strong></p>
+              <ul class="small mb-0 ps-3">
+                <li>Exigir cuentas detalladas de cada gasto.</li>
+                <li>Impedir que la pareja trabaje o estudie.</li>
+                <li>Usar el dinero como premio o castigo.</li>
+                <li>Tomar decisiones económicas sin consultar.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sexual -->
+        <div class="col-md-6 col-lg-4 animacion-entrada">
+          <div class="card h-100 tipo-sexual" style="border-radius:var(--radio-md);">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <span style="font-size:2rem;" aria-hidden="true">🚫</span>
+                <div>
+                  <h3 class="fs-6 mb-0" style="color:#be185d;">Violencia Sexual</h3>
+                  <span class="badge text-white small" style="background:#be185d;">Siempre delito</span>
+                </div>
+              </div>
+              <p class="small mb-2">
+                <strong>Definición:</strong> Todo acto sexual no consentido, o
+                que se logra mediante coacción, engaño o aprovechando situación
+                de vulnerabilidad. El consentimiento puede retirarse en cualquier momento.
+              </p>
+              <p class="small mb-2"><strong>Ejemplos cotidianos:</strong></p>
+              <ul class="small mb-0 ps-3">
+                <li>Presión para enviar imágenes íntimas (sexting forzado).</li>
+                <li>"Si me quisieras, lo harías" — coerción sexual.</li>
+                <li>Difundir imágenes íntimas sin consentimiento (Ley 2055/2020).</li>
+                <li>Contacto físico no deseado minimizado como "broma".</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Simbólica -->
+        <div class="col-md-6 col-lg-4 animacion-entrada">
+          <div class="card h-100 tipo-simbolica" style="border-radius:var(--radio-md);">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <span style="font-size:2rem;" aria-hidden="true">📺</span>
+                <div>
+                  <h3 class="fs-6 mb-0" style="color:#0d9488;">Violencia Simbólica</h3>
+                  <span class="badge text-white small" style="background:#0d9488;">La menos visible</span>
+                </div>
+              </div>
+              <p class="small mb-2">
+                <strong>Definición:</strong> Mensajes, valores, íconos o signos culturales
+                que transmiten y reproducen dominación, desigualdad y discriminación
+                de género. Opera de forma invisible y naturalizada.
+              </p>
+              <p class="small mb-2"><strong>Ejemplos cotidianos:</strong></p>
+              <ul class="small mb-0 ps-3">
+                <li>Publicidad que cosifica el cuerpo femenino.</li>
+                <li>Chistes que minimizan la violencia contra la mujer.</li>
+                <li>"Los hombres no lloran" — estereotipos de masculinidad.</li>
+                <li>Canciones que romantican el control y los celos.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Resumen legal -->
+        <div class="col-md-6 col-lg-4 animacion-entrada">
+          <div class="card h-100 border-0 rounded-3 d-flex flex-column justify-content-center text-center p-4"
+            style="background:linear-gradient(135deg,var(--color-primario),#831843);">
+            <span style="font-size:3rem;" aria-hidden="true">📜</span>
+            <h3 class="fs-6 text-white mt-2 mb-3">Marco Legal en Colombia</h3>
+            <ul class="list-unstyled text-start small" style="color:rgba(255,255,255,.9);">
+              <li class="mb-2">
+                <i class="bi bi-check-circle-fill text-warning me-2"></i>
+                <strong>Ley 1257/2008:</strong> Define y sanciona la violencia contra la mujer
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-check-circle-fill text-warning me-2"></i>
+                <strong>Ley 1761/2015:</strong> Tipifica el feminicidio como delito autónomo
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-check-circle-fill text-warning me-2"></i>
+                <strong>Ley 1542/2012:</strong> Elimina la conciliación en violencia intrafamiliar
+              </li>
+              <li>
+                <i class="bi bi-check-circle-fill text-warning me-2"></i>
+                <strong>Línea 155:</strong> Atención a mujeres víctimas de violencia, gratuita 24 h
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div><!-- /row tipos -->
+
+      <!-- Tabla comparativa formal -->
+      <div class="animacion-entrada">
+        <h3 class="fs-5 text-primario mb-3">
+          <i class="bi bi-table me-2" aria-hidden="true"></i>Tabla resumen — 5 tipos de violencia
+        </h3>
+        <div class="table-responsive">
+          <table class="table tabla-violencias table-bordered align-middle small">
+            <thead>
+              <tr>
+                <th scope="col">Tipo</th>
+                <th scope="col">Definición resumida</th>
+                <th scope="col">Ejemplo escolar</th>
+                <th scope="col">Dónde denunciar</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="badge bg-danger">Física</span></td>
+                <td>Daño corporal directo</td>
+                <td>Empujones entre estudiantes en la cancha</td>
+                <td>Policía 123 / Comisaría de Familia</td>
+              </tr>
+              <tr>
+                <td><span class="badge text-white" style="background:#7c3aed;">Psicológica</span></td>
+                <td>Daño emocional, miedo, control</td>
+                <td>Humillar a un compañero en grupo de WhatsApp</td>
+                <td>Orientación escolar / Comisaría</td>
+              </tr>
+              <tr>
+                <td><span class="badge text-white" style="background:#d97706;">Económica</span></td>
+                <td>Control de recursos para generar dependencia</td>
+                <td>Pagar todo a la novia para tener control sobre ella</td>
+                <td>Comisaría de Familia / Defensoría</td>
+              </tr>
+              <tr>
+                <td><span class="badge text-white" style="background:#be185d;">Sexual</span></td>
+                <td>Acto sexual sin consentimiento pleno</td>
+                <td>Presionar por fotos íntimas en línea</td>
+                <td>CAIVAS (fiscalía) / Línea 155</td>
+              </tr>
+              <tr>
+                <td><span class="badge text-white" style="background:#0d9488;">Simbólica</span></td>
+                <td>Mensajes culturales que refuerzan desigualdad</td>
+                <td>Memes que se burlan de víctimas de acoso</td>
+                <td>Comité de Convivencia Escolar</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════════
+       SECCIÓN 2 — RED FLAGS EN EL NOVIAZGO
+       ══════════════════════════════════════════════════════ -->
+  <section class="seccion-alt" aria-labelledby="h2-redflags">
+    <div class="container">
+
+      <div class="text-center mb-5">
+        <span class="etiqueta-seccion">🚩 Banderas Rojas</span>
+        <h2 id="h2-redflags" class="mt-1">Señales de alerta en el noviazgo adolescente</h2>
+        <p class="text-muted">
+          Los ciclos de violencia de pareja rara vez empiezan con golpes.
+          Casi siempre inician con comportamientos de control que se normalizan
+          bajo el nombre del "amor". Aprende a identificarlos.
+        </p>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Columna 1: Control y celos -->
+        <div class="col-md-6 animacion-entrada">
+          <div class="card-revista card h-100 p-4">
+            <h3 class="fs-6 text-danger mb-3">
+              <i class="bi bi-exclamation-octagon-fill me-2" aria-hidden="true"></i>
+              Control, celos e invasión de privacidad
+            </h3>
+            <div class="redflag-item">
+              <span class="rf-icon">🚩</span>
+              Revisa tu celular sin permiso o exige tus contraseñas.
+            </div>
+            <div class="redflag-item">
+              <span class="rf-icon">🚩</span>
+              Te pregunta constantemente dónde estás y con quién.
+            </div>
+            <div class="redflag-item">
+              <span class="rf-icon">🚩</span>
+              Se molesta si hablas con amigos de otro género.
+            </div>
+            <div class="redflag-item">
+              <span class="rf-icon">🚩</span>
+              Decide cómo te vistes o crítica tu apariencia de forma persistente.
+            </div>
+            <div class="redflag-item">
+              <span class="rf-icon">🚩</span>
+              "Los celos son prueba de amor" — justifica el control como afecto.
+            </div>
+          </div>
+        </div>
+
+        <!-- Columna 2: Manipulación emocional -->
+        <div class="col-md-6 animacion-entrada">
+          <div class="card-revista card h-100 p-4">
+            <h3 class="fs-6 text-danger mb-3">
+              <i class="bi bi-exclamation-octagon-fill me-2" aria-hidden="true"></i>
+              Manipulación emocional y aislamiento
+            </h3>
+            <div class="redflag-item">
+              <span class="rf-icon">🚩</span>
+              Amenaza con hacerse daño si intentas terminar la relación.
+            </div>
+            <div class="redflag-item">
+              <span class="rf-icon">🚩</span>
+              Te aleja de tus amigos y familia con comentarios negativos.
+            </div>
+            <div class="redflag-item">
+              <span class="rf-icon">🚩</span>
+              Te hace sentir culpable por cosas que tú no hiciste.
+            </div>
+            <div class="redflag-item">
+              <span class="rf-icon">🚩</span>
+              Minimiza tus logros y te convence de que no puedes solo/a.
+            </div>
+            <div class="redflag-item">
+              <span class="rf-icon">🚩</span>
+              Ciclos de violencia-disculpa-"luna de miel" que se repiten.
+            </div>
+          </div>
+        </div>
+
+        <!-- Columna 3: Coerción sexual -->
+        <div class="col-md-6 animacion-entrada">
+          <div class="card-revista card h-100 p-4">
+            <h3 class="fs-6 text-danger mb-3">
+              <i class="bi bi-exclamation-octagon-fill me-2" aria-hidden="true"></i>
+              Presión sexual y coerción
+            </h3>
+            <div class="redflag-item">
+              <span class="rf-icon">🚩</span>
+              "Si me quisieras de verdad, no pondría problemas."
+            </div>
+            <div class="redflag-item">
+              <span class="rf-icon">🚩</span>
+              Presiona para enviar fotos o videos íntimos.
+            </div>
+            <div class="redflag-item">
+              <span class="rf-icon">🚩</span>
+              No respeta cuando dices "no" o "espera".
+            </div>
+            <div class="redflag-item">
+              <span class="rf-icon">🚩</span>
+              Usa el chantaje emocional para obtener contacto físico.
+            </div>
+            <div class="redflag-item">
+              <span class="rf-icon">🚩</span>
+              Amenaza con difundir imágenes si terminas la relación.
+            </div>
+          </div>
+        </div>
+
+        <!-- Columna 4: Qué hacer -->
+        <div class="col-md-6 animacion-entrada">
+          <div class="card-revista card h-100 p-4"
+            style="background:linear-gradient(135deg,#f0fdf4,#ecfdf5); border-top:4px solid var(--color-secundario);">
+            <h3 class="fs-6 mb-3" style="color:var(--color-secundario);">
+              <i class="bi bi-heart-pulse-fill me-2" aria-hidden="true"></i>
+              ¿Qué puedo hacer si identifico estas señales?
+            </h3>
+            <ol class="small ps-3">
+              <li class="mb-2">
+                <strong>Confía en lo que sientes.</strong> Si algo te hace sentir mal,
+                incómodo/a o con miedo, eso importa y es válido.
+              </li>
+              <li class="mb-2">
+                <strong>Habla con alguien de confianza:</strong> un familiar, docente
+                o el orientador escolar.
+              </li>
+              <li class="mb-2">
+                <strong>Llama a la Línea 155</strong> (gratuita, 24 h, confidencial).
+                Atienden tanto a víctimas como a personas que quieren ayudar.
+              </li>
+              <li class="mb-2">
+                <strong>No te aísles.</strong> El aislamiento es exactamente lo que
+                busca quien ejerce violencia. Mantén tus redes de apoyo.
+              </li>
+              <li>
+                <strong>Recuerda:</strong> Una relación sana se construye desde el
+                respeto, la libertad y la igualdad — no desde el miedo o la culpa.
+              </li>
+            </ol>
+            <div class="mt-3 text-center">
+              <a href="tel:155" class="btn btn-sm"
+                style="background:var(--color-secundario);color:#fff;border-radius:var(--radio-md);">
+                <i class="bi bi-telephone-fill me-2" aria-hidden="true"></i>
+                Línea 155 — Llamar ahora
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /row red flags -->
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════════
+       SECCIÓN 3 — LEY ROSA ELVIRA CELY
+       ══════════════════════════════════════════════════════ -->
+  <section class="seccion" id="rosaelvira" aria-labelledby="h2-rosaelvira">
+    <div class="container">
+
+      <div class="row g-5 align-items-center">
+
+        <!-- Texto principal -->
+        <div class="col-lg-7 animacion-entrada">
+          <span class="etiqueta-seccion">Análisis Legislativo</span>
+          <h2 id="h2-rosaelvira" class="mt-2">
+            Ley 1761 de 2015 — Ley Rosa Elvira Cely:<br>
+            <small class="fs-5 text-muted">Colombia le da nombre al feminicidio</small>
+          </h2>
+
+          <article class="articulo-opinion mt-4">
+            <p class="drop-cap">
+              El 24 de mayo de 2012, Rosa Elvira Cely fue brutalmente agredida en
+              el Parque Nacional de Bogotá. Murió cuatro días después. Su caso
+              conmocionó al país y desató un debate que Colombia llevaba años
+              aplazando: ¿debía el asesinato de una mujer por razón de su género
+              ser tratado igual que cualquier homicidio?
+            </p>
+
+            <h3 class="fs-5 mt-4 mb-2 text-primario">
+              <i class="bi bi-gavel me-2" aria-hidden="true"></i>
+              ¿Qué establece la ley?
+            </h3>
+            <p>
+              La Ley 1761 de 2015 tipificó el <strong>feminicidio como delito autónomo</strong>
+              en el Código Penal colombiano (Art. 104A). Lo define como el acto de
+              dar muerte a una mujer por razón de su sexo, género, identidad de
+              género, orientación sexual, o por razones de discriminación, prejuicio
+              o menosprecio.
+            </p>
+            <p>
+              La pena establecida va de <strong>250 a 500 meses de prisión</strong>
+              (aproximadamente 20 a 41 años), que se agrava en circunstancias como:
+              perpetrarla en presencia de hijos, aprovechar la confianza de la
+              víctima, ejecutarla de forma cruel, o ser cometida por servidor público.
+            </p>
+
+            <h3 class="fs-5 mt-4 mb-2 text-primario">
+              <i class="bi bi-question-circle me-2" aria-hidden="true"></i>
+              ¿Por qué es importante que sea un delito autónomo?
+            </h3>
+            <p>
+              Antes de la ley, el feminicidio se procesaba como homicidio agravado.
+              La diferencia no es solo semántica: nombrar el crimen obliga al sistema
+              judicial a investigar el contexto de discriminación de género,
+              recoge estadísticas diferenciadas, y envía un mensaje cultural claro:
+              matar a una mujer por ser mujer es un crimen de Estado.
+            </p>
+            <p>
+              Además, la ley creó el <strong>tipo penal de feminicidio tentado</strong>,
+              lo que permite actuar judicialmente antes de que se consume el asesinato,
+              y estableció medidas de protección para víctimas de violencia basada en género.
+            </p>
+
+            <h3 class="fs-5 mt-4 mb-2 text-primario">
+              <i class="bi bi-bar-chart me-2" aria-hidden="true"></i>
+              Contexto y cifras
+            </h3>
+            <p>
+              Según el Instituto Nacional de Medicina Legal, en Colombia se registran
+              en promedio más de 600 feminicidios al año. Las cifras reales pueden ser
+              mayores debido al subregistro. La mayoría de los perpetradores son o
+              fueron parejas o ex parejas de las víctimas, lo que confirma que la
+              violencia de género ocurre principalmente en el ámbito íntimo.
+            </p>
+          </article>
+        </div>
+
+        <!-- Panel lateral -->
+        <div class="col-lg-5 animacion-entrada">
+
+          <!-- Datos clave -->
+          <div class="row g-3 mb-4">
+            <div class="col-6">
+              <div class="dato-destacado" style="font-size:1.5rem;">
+                250–500
+                <small>meses de prisión por feminicidio</small>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="dato-destacado" style="font-size:1.5rem;">
+                600+
+                <small>feminicidios anuales en Colombia</small>
+              </div>
+            </div>
+          </div>
+
+          <!-- Circunstancias agravantes -->
+          <div class="card-revista card p-4 mb-4">
+            <h3 class="fs-6 text-danger mb-3">
+              <i class="bi bi-arrow-up-circle-fill me-2" aria-hidden="true"></i>
+              Circunstancias que agravan la pena
+            </h3>
+            <ul class="small ps-3 mb-0">
+              <li class="mb-1">Cometido frente a hijos o familiares de la víctima.</li>
+              <li class="mb-1">El agresor aprovechó la confianza o la intimidad.</li>
+              <li class="mb-1">Cometido de forma cruel o con sevicia.</li>
+              <li class="mb-1">Perpetrado por servidor público.</li>
+              <li class="mb-1">La víctima estaba embarazada.</li>
+              <li class="mb-1">La víctima era menor de edad o persona mayor.</li>
+              <li>Cometido en el marco de violencia sistemática.</li>
+            </ul>
+          </div>
+
+          <!-- Homenaje -->
+          <div class="alert border-0 rounded-3 text-center py-4"
+            style="background:linear-gradient(135deg,#fdf2f8,#fff5f5);">
+            <p style="font-size:2.5rem;" aria-hidden="true">🌺</p>
+            <blockquote class="fst-italic small mb-2 text-muted">
+              "El feminicidio no es un crimen pasional. Es un crimen político."
+            </blockquote>
+            <span class="fw-bold small" style="color:#831843;">
+              Rosa Elvira Cely (1968–2012)
+            </span><br>
+            <small class="text-muted">Su caso cambió la historia legislativa de Colombia.</small>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════════
+       SECCIÓN 4 — DERECHOS SEXUALES Y REPRODUCTIVOS
+       ══════════════════════════════════════════════════════ -->
+  <section class="seccion-alt" aria-labelledby="h2-dsr">
+    <div class="container">
+
+      <div class="text-center mb-5">
+        <span class="etiqueta-seccion">Reportaje</span>
+        <h2 id="h2-dsr" class="mt-1">Derechos Sexuales y Reproductivos en Colombia</h2>
+        <p class="text-muted">
+          Son derechos humanos reconocidos internacionalmente y protegidos por la
+          Constitución Política y la jurisprudencia de la Corte Constitucional.
+          No son privilegios: son derechos de todas las personas.
+        </p>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Reportaje principal -->
+        <div class="col-lg-8 animacion-entrada">
+          <article class="articulo-opinion">
+            <h3 class="fs-5 text-primario mb-3">
+              <i class="bi bi-journal-text me-2" aria-hidden="true"></i>
+              ¿Qué son y por qué importan?
+            </h3>
+            <p>
+              Los Derechos Sexuales y Reproductivos (DSR) son el conjunto de
+              derechos que garantizan que todas las personas puedan tomar decisiones
+              libres, informadas y responsables sobre su sexualidad y reproducción,
+              sin discriminación, coacción ni violencia. En Colombia, están protegidos
+              por la Constitución (Art. 16, 42, 49 y 93), la Ley 1098 de 2006 y
+              múltiples sentencias de la Corte Constitucional.
+            </p>
+
+            <h3 class="fs-5 mt-4 mb-2 text-primario">
+              <i class="bi bi-list-check me-2" aria-hidden="true"></i>
+              Derechos reconocidos en Colombia
+            </h3>
+            <div class="row g-2 small">
+              <div class="col-sm-6">
+                <div class="bg-light rounded p-2">
+                  <i class="bi bi-check-circle-fill text-success me-2"></i>
+                  Derecho a recibir <strong>educación sexual integral</strong>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="bg-light rounded p-2">
+                  <i class="bi bi-check-circle-fill text-success me-2"></i>
+                  Acceso gratuito a <strong>métodos anticonceptivos</strong> en entidades de salud
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="bg-light rounded p-2">
+                  <i class="bi bi-check-circle-fill text-success me-2"></i>
+                  Derecho a decidir si, cuándo y con quién <strong>tener hijos</strong>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="bg-light rounded p-2">
+                  <i class="bi bi-check-circle-fill text-success me-2"></i>
+                  Derecho a no sufrir <strong>esterilización forzada</strong>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="bg-light rounded p-2">
+                  <i class="bi bi-check-circle-fill text-success me-2"></i>
+                  Derecho a la <strong>atención prenatal y al parto seguro</strong>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="bg-light rounded p-2">
+                  <i class="bi bi-check-circle-fill text-success me-2"></i>
+                  Derecho a vivir la sexualidad sin <strong>discriminación por orientación</strong>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="fs-5 mt-4 mb-2 text-primario">
+              <i class="bi bi-hospital me-2" aria-hidden="true"></i>
+              El caso de la interrupción voluntaria del embarazo (IVE)
+            </h3>
+            <p>
+              La Sentencia C-055 de 2022 de la Corte Constitucional despenalizó
+              el aborto en Colombia hasta las 24 semanas de gestación, convirtiéndose
+              en uno de los fallos más importantes de la historia jurídica del país.
+              Antes, el aborto solo era permitido en tres causales: riesgo para la
+              vida de la madre, malformación grave del feto e inviabilidad, y embarazo
+              producto de acceso carnal violento o incesto. A partir de 2022, la
+              decisión pertenece exclusivamente a la persona gestante durante las
+              primeras 24 semanas.
+            </p>
+
+            <h3 class="fs-5 mt-4 mb-2 text-primario">
+              <i class="bi bi-people-fill me-2" aria-hidden="true"></i>
+              DSR para adolescentes: lo que debes saber
+            </h3>
+            <p>
+              Los adolescentes tienen derecho a recibir información sexual veraz,
+              completa y sin juicios en los servicios de salud. Una IPS (institución
+              prestadora de salud) no puede negarte información sobre métodos
+              anticonceptivos, ni revelar a tus padres una consulta si eres mayor
+              de 14 años, salvo que haya riesgo para tu vida. Profamilia ofrece
+              servicios de atención a jóvenes con total confidencialidad.
+            </p>
+          </article>
+        </div>
+
+        <!-- Panel lateral: recursos -->
+        <div class="col-lg-4 animacion-entrada">
+
+          <h3 class="fs-5 text-primario mb-3">
+            <i class="bi bi-telephone-fill me-2" aria-hidden="true"></i>
+            Líneas y recursos
+          </h3>
+
+          <div class="directorio-card icbf mb-3">
+            <strong>Profamilia</strong><br>
+            <small class="text-muted">Salud sexual y reproductiva confidencial para jóvenes</small><br>
+            <a href="tel:018000110894" class="small">
+              <i class="bi bi-telephone me-1"></i>01 8000 110 894
+            </a> —
+            <a href="https://profamilia.org.co" target="_blank" rel="noopener" class="small">
+              profamilia.org.co
+            </a>
+          </div>
+
+          <div class="directorio-card comisaria mb-3">
+            <strong>Línea 155 — Mujer</strong><br>
+            <small class="text-muted">Violencia de género, 24 h, gratuita</small><br>
+            <a href="tel:155" class="small fw-bold">
+              <i class="bi bi-telephone-fill me-1"></i>155
+            </a>
+          </div>
+
+          <div class="directorio-card policia mb-3">
+            <strong>Fiscalía — CAIVAS</strong><br>
+            <small class="text-muted">Centro de Atención a Víctimas de Violencia Sexual</small><br>
+            <a href="tel:122" class="small">
+              <i class="bi bi-telephone me-1"></i>122
+            </a>
+          </div>
+
+          <div class="directorio-card icbf">
+            <strong>Ministerio de Salud — ETS/VIH</strong><br>
+            <small class="text-muted">Prueba gratuita y confidencial</small><br>
+            <a href="https://www.minsalud.gov.co" target="_blank" rel="noopener" class="small">
+              minsalud.gov.co
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════════
+       SECCIÓN 5 — TEST INTERACTIVO: MITO vs. REALIDAD
+       ══════════════════════════════════════════════════════ -->
+  <section class="seccion" aria-labelledby="h2-test">
+    <div class="container">
+
+      <div class="text-center mb-5">
+        <span class="etiqueta-seccion">Test Interactivo</span>
+        <h2 id="h2-test" class="mt-1">¿Mito o Realidad?</h2>
+        <p class="text-muted">
+          Pon a prueba lo que sabes sobre violencia de género y derechos reproductivos.
+          Lee cada afirmación, elige tu respuesta y descubre la explicación correcta.
+        </p>
+        <!-- Marcador -->
+        <div class="mt-3">
+          <span id="score-display">0</span>
+          <span class="text-muted fs-5"> / <span id="total-preguntas">5</span> correctas</span>
+        </div>
+      </div>
+
+      <!-- Pregunta 1 -->
+      <div class="pregunta-test animacion-entrada">
+        <span class="etiqueta-seccion mb-2 d-inline-block" style="font-size:.7rem;">Pregunta 1 de 5</span>
+        <h3 class="fs-5 mb-3">
+          "Si una mujer no se defiende ni denuncia, significa que le gusta o acepta la violencia."
+        </h3>
+        <form class="form-test-mito" data-respuesta="realidad" data-numero="1" novalidate>
+          <div class="opciones">
+            <label>
+              <input type="radio" name="p1" value="mito" class="me-2" />
+              🔴 Esto es un mito
+            </label>
+            <label>
+              <input type="radio" name="p1" value="realidad" class="me-2" />
+              ✅ Esto es una realidad
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primario btn-sm mt-3">
+            <i class="bi bi-check2-circle me-1"></i>Comprobar respuesta
+          </button>
+          <!-- Resultados ocultos -->
+          <div class="resultado-test resultado-realidad mt-3" data-tipo="realidad">
+            ✅ <strong>¡Correcto! Esto es un MITO.</strong>
+            Las víctimas de violencia no denuncian por múltiples razones: miedo a represalias,
+            dependencia económica, vergüenza social, amor por el agresor o desconfianza en el sistema.
+            El ciclo de violencia de Lenore Walker describe cómo la fase de "luna de miel"
+            refuerza la permanencia en la relación. Nunca es culpa de la víctima.
+          </div>
+          <div class="resultado-test resultado-mito mt-3" data-tipo="mito">
+            ❌ <strong>Incorrecto.</strong> Esta afirmación ES un mito.
+            No denunciar no significa aceptar. Las barreras para salir de una relación violenta
+            son complejas y reales. Ver la explicación correcta arriba.
+          </div>
+        </form>
+      </div>
+
+      <!-- Pregunta 2 -->
+      <div class="pregunta-test animacion-entrada">
+        <span class="etiqueta-seccion mb-2 d-inline-block" style="font-size:.7rem;">Pregunta 2 de 5</span>
+        <h3 class="fs-5 mb-3">
+          "En Colombia, el feminicidio es un delito autónomo con penas mayores al homicidio ordinario."
+        </h3>
+        <form class="form-test-mito" data-respuesta="realidad" data-numero="2" novalidate>
+          <div class="opciones">
+            <label>
+              <input type="radio" name="p2" value="mito" class="me-2" />
+              🔴 Esto es un mito
+            </label>
+            <label>
+              <input type="radio" name="p2" value="realidad" class="me-2" />
+              ✅ Esto es una realidad
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primario btn-sm mt-3">
+            <i class="bi bi-check2-circle me-1"></i>Comprobar respuesta
+          </button>
+          <div class="resultado-test resultado-realidad mt-3" data-tipo="realidad">
+            ✅ <strong>¡Correcto! Esto es una REALIDAD.</strong>
+            La Ley 1761 de 2015 tipificó el feminicidio como delito autónomo (Art. 104A del
+            Código Penal). La pena base es de 250 a 500 meses de prisión, superior al homicidio
+            ordinario. Colombia fue uno de los primeros países de América Latina en hacerlo.
+          </div>
+          <div class="resultado-test resultado-mito mt-3" data-tipo="mito">
+            ❌ <strong>Incorrecto.</strong> Esta afirmación ES una realidad.
+            Desde 2015, Colombia tiene el feminicidio como delito propio con las penas más
+            altas del Código Penal.
+          </div>
+        </form>
+      </div>
+
+      <!-- Pregunta 3 -->
+      <div class="pregunta-test animacion-entrada">
+        <span class="etiqueta-seccion mb-2 d-inline-block" style="font-size:.7rem;">Pregunta 3 de 5</span>
+        <h3 class="fs-5 mb-3">
+          "Los celos extremos son señal de amor profundo, no de una red flag."
+        </h3>
+        <form class="form-test-mito" data-respuesta="mito" data-numero="3" novalidate>
+          <div class="opciones">
+            <label>
+              <input type="radio" name="p3" value="mito" class="me-2" />
+              🔴 Esto es un mito
+            </label>
+            <label>
+              <input type="radio" name="p3" value="realidad" class="me-2" />
+              ✅ Esto es una realidad
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primario btn-sm mt-3">
+            <i class="bi bi-check2-circle me-1"></i>Comprobar respuesta
+          </button>
+          <div class="resultado-test resultado-mito mt-3" data-tipo="mito">
+            ✅ <strong>¡Correcto! Esto es un MITO.</strong>
+            Los celos son una emoción humana, pero los celos extremos son una forma de control
+            y un predictor de violencia futura en la relación. El amor sano no necesita
+            monitorear, controlar ni restringir la libertad de la otra persona.
+          </div>
+          <div class="resultado-test resultado-realidad mt-3" data-tipo="realidad">
+            ❌ <strong>Incorrecto.</strong> Esta afirmación ES un mito.
+            Los celos extremos son una señal de alerta clara. Están asociados al control,
+            el aislamiento y, en muchos casos, escalan hacia la violencia.
+          </div>
+        </form>
+      </div>
+
+      <!-- Pregunta 4 -->
+      <div class="pregunta-test animacion-entrada">
+        <span class="etiqueta-seccion mb-2 d-inline-block" style="font-size:.7rem;">Pregunta 4 de 5</span>
+        <h3 class="fs-5 mb-3">
+          "Un adolescente mayor de 14 años puede solicitar información sobre métodos
+          anticonceptivos en una IPS sin que sus padres sean notificados obligatoriamente."
+        </h3>
+        <form class="form-test-mito" data-respuesta="realidad" data-numero="4" novalidate>
+          <div class="opciones">
+            <label>
+              <input type="radio" name="p4" value="mito" class="me-2" />
+              🔴 Esto es un mito
+            </label>
+            <label>
+              <input type="radio" name="p4" value="realidad" class="me-2" />
+              ✅ Esto es una realidad
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primario btn-sm mt-3">
+            <i class="bi bi-check2-circle me-1"></i>Comprobar respuesta
+          </button>
+          <div class="resultado-test resultado-realidad mt-3" data-tipo="realidad">
+            ✅ <strong>¡Correcto! Esto es una REALIDAD.</strong>
+            La Corte Constitucional ha reconocido el derecho a la confidencialidad
+            de los adolescentes en salud sexual. Las IPS no pueden revelar información
+            de salud sexual a los padres sin el consentimiento del adolescente,
+            salvo que exista un riesgo vital.
+          </div>
+          <div class="resultado-test resultado-mito mt-3" data-tipo="mito">
+            ❌ <strong>Incorrecto.</strong> Esta afirmación ES una realidad.
+            Los adolescentes tienen derecho a la confidencialidad en sus consultas
+            de salud sexual. Ver la explicación correcta arriba.
+          </div>
+        </form>
+      </div>
+
+      <!-- Pregunta 5 -->
+      <div class="pregunta-test animacion-entrada">
+        <span class="etiqueta-seccion mb-2 d-inline-block" style="font-size:.7rem;">Pregunta 5 de 5</span>
+        <h3 class="fs-5 mb-3">
+          "La violencia psicológica no es tan grave como la física porque no deja heridas visibles."
+        </h3>
+        <form class="form-test-mito" data-respuesta="mito" data-numero="5" novalidate>
+          <div class="opciones">
+            <label>
+              <input type="radio" name="p5" value="mito" class="me-2" />
+              🔴 Esto es un mito
+            </label>
+            <label>
+              <input type="radio" name="p5" value="realidad" class="me-2" />
+              ✅ Esto es una realidad
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primario btn-sm mt-3">
+            <i class="bi bi-check2-circle me-1"></i>Comprobar respuesta
+          </button>
+          <div class="resultado-test resultado-mito mt-3" data-tipo="mito">
+            ✅ <strong>¡Correcto! Esto es un MITO.</strong>
+            La violencia psicológica puede tener consecuencias tan o más graves que la física:
+            ansiedad, depresión, trastorno de estrés postraumático (TEPT) y pérdida de la
+            identidad propia. Además, suele ser la puerta de entrada a formas más graves
+            de violencia.
+          </div>
+          <div class="resultado-test resultado-realidad mt-3" data-tipo="realidad">
+            ❌ <strong>Incorrecto.</strong> Esta afirmación ES un mito.
+            Las heridas psicológicas son igualmente graves. Ver la explicación correcta arriba.
+          </div>
+        </form>
+      </div>
+
+      <!-- Resultado final del test -->
+      <div id="resultado-final-test" class="card-revista card p-4 mt-4 text-center d-none animacion-entrada">
+        <h3 class="fs-4 text-primario mb-2">¡Completaste el test!</h3>
+        <p class="fs-5 mb-1">
+          Obtuviste <strong id="score-final">0</strong> de 5 respuestas correctas.
+        </p>
+        <p id="mensaje-final" class="text-muted small mb-3"></p>
+        <button id="btn-reiniciar-test" class="btn btn-primario">
+          <i class="bi bi-arrow-clockwise me-2"></i>Volver a intentar
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════════
+       SECCIÓN 6 — PÓSTER DE PREVENCIÓN
+       ══════════════════════════════════════════════════════ -->
+  <section class="seccion-oscura" aria-labelledby="h2-poster">
+    <div class="container text-center">
+
+      <span class="etiqueta-seccion">Campaña</span>
+      <h2 id="h2-poster" class="mt-2 text-white">Póster de Prevención</h2>
+      <p class="mb-4" style="color:rgba(255,255,255,.85);">
+        Descarga nuestro póster informativo para compartir en tu institución,
+        redes sociales o cartelera del salón.
+      </p>
+
+      <div class="row justify-content-center g-3 mb-4">
+        <!-- Preview del póster (placeholder) -->
+        <div class="col-md-5">
+          <div class="galeria-item mx-auto"
+            style="max-width:320px; aspect-ratio:2/3; border-radius:var(--radio-lg);">
+            <div class="galeria-placeholder text-center px-3">
+              <span style="font-size:3rem;" aria-hidden="true">🛡️</span>
+              <p class="mt-2 mb-1 fw-bold">Poster de Prevención</p>
+              <p class="small">Violencia de Género — Voz Cívica 11</p>
+              <p class="small mt-2">
+                Línea 155 · Policía 123<br>
+                Profamilia: 01 8000 110 894
+              </p>
+              <small style="opacity:.7;">
+                [Reemplazar con imagen real del póster.<br>
+                Formato recomendado: 800×1200 px PNG]
+              </small>
+            </div>
+          </div>
+        </div>
+        <!-- Info del póster -->
+        <div class="col-md-5 d-flex flex-column justify-content-center text-start">
+          <h3 class="fs-5 text-white mb-3">El póster incluye:</h3>
+          <ul style="color:rgba(255,255,255,.85);" class="small">
+            <li class="mb-2">Las 5 formas de violencia de género con íconos visuales</li>
+            <li class="mb-2">Las 5 red flags más importantes en el noviazgo</li>
+            <li class="mb-2">Líneas de atención y emergencia en Colombia</li>
+            <li class="mb-2">QR code con enlace a esta revista digital</li>
+            <li>Diseño imprimible en A3 y publicable en redes sociales</li>
+          </ul>
+          <div class="d-flex flex-wrap gap-2 mt-3">
+            <!-- Botón que abre el modal -->
+            <button id="btn-poster" class="btn btn-acento"
+              data-bs-toggle="modal" data-bs-target="#modalPoster">
+              <i class="bi bi-download me-2" aria-hidden="true"></i>
+              Ver / Descargar Póster
+            </button>
+            <a href="tel:155" class="btn btn-outline-light">
+              <i class="bi bi-telephone-fill me-2" aria-hidden="true"></i>
+              Línea 155
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Modal del póster -->
+  <div class="modal fade" id="modalPoster" tabindex="-1"
+    aria-labelledby="modalPosterLabel" aria-modal="true" role="dialog">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header" style="background:var(--color-primario);">
+          <h4 class="modal-title text-white fs-5" id="modalPosterLabel">
+            <i class="bi bi-shield-heart me-2" aria-hidden="true"></i>
+            Póster de Prevención — Voz Cívica 11
+          </h4>
+          <button type="button" class="btn-close btn-close-white"
+            data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body text-center p-4">
+          <!-- Placeholder del póster en el modal -->
+          <div class="rounded-3 p-5 mb-3"
+            style="background:linear-gradient(135deg,#1e3a8a,#831843);color:#fff;min-height:300px;display:flex;flex-direction:column;align-items:center;justify-content:center;">
+            <span style="font-size:4rem;" aria-hidden="true">🛡️</span>
+            <h3 class="mt-3 mb-2">Prevención de la Violencia de Género</h3>
+            <p class="mb-1">¿Necesitas ayuda? No estás sola/solo.</p>
+            <p class="fw-bold fs-4">Línea 155 — Gratuita · 24 horas</p>
+            <p class="small opacity-75">
+              Policía: 123 · ICBF: 01 8000 91 8080 · Profamilia: 01 8000 110 894
+            </p>
+            <p class="small opacity-75 mt-2">
+              [Reemplaza este bloque con la imagen real del póster diseñado por el equipo.
+              Recomendado: insertar un &lt;img&gt; con el archivo PNG.]
+            </p>
+          </div>
+          <p class="small text-muted">
+            Para descargar: haz clic derecho sobre el póster → "Guardar imagen como..."
+            o solicita el archivo PNG al equipo editorial.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <a href="tel:155" class="btn btn-sm"
+            style="background:var(--color-secundario);color:#fff;">
+            <i class="bi bi-telephone-fill me-1"></i>Llamar Línea 155
+          </a>
+          <button type="button" class="btn btn-sm btn-secondary"
+            data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════════════════
+       PIE DE PÁGINA
+       ══════════════════════════════════════════════════════ -->
+  <footer class="footer-revista" role="contentinfo">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-3 mb-md-0">
+          <strong style="font-family:var(--fuente-titular);font-size:1.1rem;color:#fff;">Sin Filtro</strong>
+          <p class="mb-0 mt-1 small">Revista Escolar Digital · Grado 11 · Colombia · <span id="ano-footer"></span></p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <nav aria-label="Pie de página">
+            <ul class="list-unstyled d-flex flex-wrap justify-content-md-end gap-2 mb-0">
+              <li><a href="index.html">Portada</a></li>
+              <li><a href="constitucion.html">Constitución</a></li>
+              <li><a href="infancia.html">Infancia</a></li>
+              <li><a href="genero.html">Género</a></li>
+              <li><a href="ambiente.html">Ambiente</a></li>
+              <li><a href="creditos.html">Créditos</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <hr class="footer-linea my-3" />
+      <p class="text-center small mb-0" style="color:rgba(255,255,255,.55);">
+        Contenido con fines educativos · Artículo 41 C.P.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc4s9bIOgUxi8T/jzmCAtVHRm5C1BR08LpCIoJOzA9V"
+    crossorigin="anonymous"></script>
+  <!-- JS propio -->
+  <script src="js/main.js"></script>
+
+  <!-- ── Script local: lógica extendida del test con marcador ── -->
+  <script>
+    'use strict';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const totalPreguntas = 5;
+      let puntaje = 0;
+      let respondidas = 0;
+
+      const scoreDisplay   = document.getElementById('score-display');
+      const resultadoFinal = document.getElementById('resultado-final-test');
+      const scoreFinal     = document.getElementById('score-final');
+      const mensajeFinal   = document.getElementById('mensaje-final');
+      const btnReiniciar   = document.getElementById('btn-reiniciar-test');
+
+      /**
+       * Escucha el evento submit de CADA formulario de test.
+       * Actualiza el marcador global tras cada respuesta.
+       */
+      document.querySelectorAll('.form-test-mito').forEach(form => {
+        form.addEventListener('submit', () => {
+          // El submit es manejado por main.js; aquí solo contamos
+          // la respuesta correcta DESPUÉS de que main.js la procesa.
+          // Usamos un breve timeout para leer el estado post-procesado.
+          setTimeout(() => {
+            const seleccion = form.querySelector('input[type="radio"]:checked');
+            if (!seleccion) return; // Ya deshabilitado por main.js
+
+            const esCorrecta = seleccion.value === form.dataset.respuesta;
+            if (esCorrecta) puntaje++;
+            respondidas++;
+
+            if (scoreDisplay) scoreDisplay.textContent = puntaje;
+
+            // Mostrar resultado final al responder todas
+            if (respondidas === totalPreguntas && resultadoFinal) {
+              resultadoFinal.classList.remove('d-none');
+              if (scoreFinal) scoreFinal.textContent = puntaje;
+              if (mensajeFinal) {
+                const mensajes = [
+                  'Sigue aprendiendo — cada pregunta te acerca más al conocimiento.',
+                  'Buen comienzo, revisa las explicaciones de las respuestas.',
+                  'Bien hecho, estás construyendo conciencia cívica.',
+                  'Muy bien, casi perfecto. ¡Comparte lo que aprendiste!',
+                  '¡Perfecto! Eres un referente en tu comunidad.'
+                ];
+                mensajeFinal.textContent = mensajes[Math.min(puntaje, 4)];
+              }
+            }
+          }, 50);
+        });
+      });
+
+      /* Botón de reinicio — recarga la página */
+      if (btnReiniciar) {
+        btnReiniciar.addEventListener('click', () => window.location.reload());
+      }
+    });
+  </script>
+
+</body>
+</html>
